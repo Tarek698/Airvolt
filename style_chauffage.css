@@ -1,3 +1,4 @@
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body {
     color: #333;
 }
 
+/* Header styles */
 header {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -40,16 +42,23 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #3498db; /* Primary color from the logo */
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #f1c40f; /* Secondary color from the logo */
+}
+
+/* Contact info styles */
 .contact-info {
     text-align: right;
 }
 
+/* Hero section styles */
 .hero {
-    background: linear-gradient(to right, #65799b, #5e2563);
+    background: linear-gradient(to right, #3498db, #f1c40f); /* Gradient using logo colors */
     color: #fff;
     padding: 100px 20px;
     text-align: center;
@@ -65,7 +74,7 @@ nav ul li a {
 }
 
 .cta-button {
-    background-color: #28a745;
+    background-color: #3498db; /* Primary color from the logo */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -73,8 +82,15 @@ nav ul li a {
     border-radius: 5px;
     display: inline-block;
     margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.cta-button:hover {
+    background-color: #f1c40f; /* Secondary color from the logo */
+    transform: scale(1.05);
+}
+
+/* Section styles */
 .section-gray {
     background-color: #f4f4f4;
     padding: 50px 20px;
@@ -106,9 +122,10 @@ nav ul li a {
     list-style: disc;
 }
 
+/* Footer styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #3498db; /* Primary color from the logo */
+    color: #000000;
     text-align: center;
     padding: 20px;
 }
