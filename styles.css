@@ -154,6 +154,42 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+/* News section styles */
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-content {
+    display: flex;
+    align-items: center;
+}
+
+.news-content img.uniform-logo {
+    margin-right: 20px;
+    width: 300px;
+    height: auto;
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.project-image {
+    flex: 0 0 150px;
+    margin-left: 20px;
+}
+
+.project-image img.uniform-logo {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Footer styles */
 footer {
     background-color: #000000; /* Primary color from the logo */
