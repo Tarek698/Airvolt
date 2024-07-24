@@ -148,9 +148,9 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-.service img {
-    max-width: 100%;
-    height: auto;
+.service img.service-logo {
+    width: 100px; /* Uniform size for all service logos */
+    height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px;
 }
 
