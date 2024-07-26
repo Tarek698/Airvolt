@@ -108,24 +108,40 @@ nav ul li a:hover {
 
 .category-details {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 50px; /* Added spacing between sections */
 }
 
 .category-details img {
-    max-width: 300px;
+    width: 50%;
     height: auto;
-    margin-right: 20px;
+    border-radius: 10px; /* Added border radius for rounded image corners */
 }
 
-.category-details ul {
-    margin-left: 20px;
-    list-style: disc;
+.category-details .text-content {
+    width: 50%;
+    padding: 20px;
+    font-size: 1.1em; /* Increased font size for better readability */
+    line-height: 1.8; /* Increased line height for better spacing */
+}
+
+/* Styles for alternating image positions */
+.category-details.left-image img {
+    order: 1;
+}
+
+.category-details.right-image img {
+    order: 2;
+}
+
+.category-details.right-image .text-content {
+    order: 1;
 }
 
 /* Footer styles */
 footer {
-    background-color: #3498db; /* Primary color from the logo */
-    color: #000000;
+    background-color: #000000; /* Primary color from the logo */
+    color: #fff;
     text-align: center;
     padding: 20px;
 }

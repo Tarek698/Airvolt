@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
     color: #333;
     padding: 20px;
 }
@@ -22,8 +22,6 @@ body {
 header {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .header-content {
@@ -57,7 +55,6 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #f1c40f; /* Secondary color from the logo */
-    transform: scale(1.1);
 }
 
 /* Contact info styles */
@@ -71,9 +68,9 @@ nav ul li a:hover {
     color: #fff;
     padding: 100px 20px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 60px; /* More space at the bottom */
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -104,38 +101,76 @@ nav ul li a:hover {
 }
 
 /* Content sections styles */
-.about, .services, .quality, .news, .climatisation, .treatment-air {
+.section:not(.exclude) {
     padding: 50px 20px;
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 80px; /* More space at the bottom */
     animation: fadeInUp 1s ease-in-out;
+    border-left: 6px solid #3498db; /* Left border as demarcation */
 }
 
-.about-content, .service, .quality-content, .news-item, .climatisation-content, .treatment-air-content {
+.section:nth-child(even):not(.exclude) {
+    background-color: #f0f0f0; /* Light gray background for alternating sections */
+}
+
+.section-content {
     padding: 20px;
+}
+
+.section h2, .service h3, .quality h2, .news-item h3, .project-content h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.section p, .service p, .quality p, .news-item p, .project-content p {
     margin: 20px 0;
 }
 
-.about-content h2, .service h3, .quality-text h2, .news-item h3, .climatisation-content h2, .treatment-air-content h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #3498db; /* Primary color from the logo */
-}
-
-.about-content p, .service p, .quality-text p, .news-item p, .climatisation-content p, .treatment-air-content p {
-    margin: 10px 0;
-}
-
-.service h3, .news-item h3, .climatisation-content h3 {
+.service h3, .news-item h3, .project-content h3 {
     font-size: 1.5em;
     margin-top: 20px;
 }
 
-.climatisation-content ul {
-    list-style: disc;
-    margin-left: 20px;
+.service img, .news img, .project img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service img:hover, .news img:hover, .project img:hover {
+    transform: scale(1.1);
+}
+
+/* Flex styles for services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px; /* More space between items */
+    margin-bottom: 80px; /* Extra space below services section */
+    background-color: transparent; /* No background color for services section */
+    box-shadow: none; /* No box shadow for services section */
+}
+
+.service {
+    flex: 1 1 calc(25% - 40px); /* Adjusted to reflect more space */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+    border-left: 6px solid #3498db; /* Left border as demarcation */
+}
+
+.service:hover {
+    transform: scale(1.05);
 }
 
 /* Quality content styles */
@@ -145,42 +180,15 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.quality-logo img {
-    width: 200px; /* Updated width */
-    border-radius: 10px;
+.quality img {
+    width: 200px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
-.quality-logo img:hover {
+.quality img:hover {
     transform: scale(1.1);
-}
-
-/* Services section styles */
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.service {
-    flex: 1 1 calc(25% - 20px);
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.service:hover {
-    transform: scale(1.05);
-}
-
-.service img.service-logo {
-    width: 100px; /* Uniform size for all service logos */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px;
 }
 
 /* News section styles */
@@ -195,9 +203,9 @@ nav ul li a:hover {
 
 .news-content img.uniform-logo {
     margin-right: 20px;
-    width: 200px; /* Updated width */
+    width: 120px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
@@ -206,6 +214,7 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+/* Project content styles */
 .project-content {
     display: flex;
     justify-content: space-between;
@@ -217,14 +226,14 @@ nav ul li a:hover {
 }
 
 .project-image {
-    flex: 0 0 200px; /* Updated width */
+    flex: 0 0 200px;
     margin-left: 20px;
 }
 
 .project-image img.uniform-logo {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
@@ -235,13 +244,13 @@ nav ul li a:hover {
 
 /* Footer styles */
 footer {
-    background-color: #000000; /* Primary color from the logo */
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-top: 40px;
     transition: transform 0.3s ease-in-out;
 }
 
