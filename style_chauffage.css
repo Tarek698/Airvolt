@@ -42,13 +42,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #3498db; /* Primary color from the logo */
+    color: #3498db;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #f1c40f; /* Secondary color from the logo */
+    color: #f1c40f;
 }
 
 /* Contact info styles */
@@ -58,7 +58,7 @@ nav ul li a:hover {
 
 /* Hero section styles */
 .hero {
-    background: linear-gradient(to right, #3498db, #f1c40f); /* Gradient using logo colors */
+    background: linear-gradient(to right, #3498db, #f1c40f);
     color: #fff;
     padding: 100px 20px;
     text-align: center;
@@ -74,7 +74,7 @@ nav ul li a:hover {
 }
 
 .cta-button {
-    background-color: #3498db; /* Primary color from the logo */
+    background-color: #3498db;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -86,7 +86,7 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #f1c40f; /* Secondary color from the logo */
+    background-color: #f1c40f;
     transform: scale(1.05);
 }
 
@@ -108,24 +108,34 @@ nav ul li a:hover {
 
 .category-details {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
-    margin-bottom: 50px; /* Added spacing between sections */
+    align-items: flex-start;
+    margin-bottom: 50px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .category-details img {
     width: 50%;
     height: auto;
-    border-radius: 10px; /* Added border radius for rounded image corners */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-details img:hover {
+    transform: scale(1.05);
 }
 
 .category-details .text-content {
     width: 50%;
     padding: 20px;
-    font-size: 1.1em; /* Increased font size for better readability */
-    line-height: 1.8; /* Increased line height for better spacing */
+    font-size: 1.1em;
+    line-height: 1.8;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Styles for alternating image positions */
+.category-details .text-content:hover {
+    color: #3498db;
+}
+
 .category-details.left-image img {
     order: 1;
 }
@@ -138,9 +148,66 @@ nav ul li a:hover {
     order: 1;
 }
 
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .category-details {
+        flex-direction: column;
+    }
+    
+    .category-details img,
+    .category-details .text-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+}
+
 /* Footer styles */
 footer {
-    background-color: #000000; /* Primary color from the logo */
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 20px;

@@ -107,29 +107,108 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-/* Detail sections */
 .panel-details, .advantages-details, .installation-details, .services-details {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .panel-details img, .advantages-details img, .installation-details img, .services-details img {
-    max-width: 300px;
+    width: 50%;
     height: auto;
-    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.panel-details img:hover, .advantages-details img:hover, .installation-details img:hover, .services-details img:hover {
+    transform: scale(1.05);
 }
 
 .panel-details p, .advantages-details ul, .installation-details p, .services-details ul {
-    margin-left: 20px;
+    width: 50%;
+    padding: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    transition: color 0.3s ease-in-out;
 }
 
-.advantages-details ul, .services-details ul {
-    list-style: disc;
+.panel-details p:hover, .advantages-details ul:hover, .installation-details p:hover, .services-details ul:hover {
+    color: #3498db;
+}
+
+.panel-details.left-image img, .installation-details.left-image img, .services-details.left-image img {
+    order: 1;
+}
+
+.panel-details.right-image img, .advantages-details.right-image img, .services-details.right-image img {
+    order: 2;
+}
+
+.panel-details.right-image p, .advantages-details.right-image ul, .services-details.right-image ul {
+    order: 1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .panel-details, .advantages-details, .installation-details, .services-details {
+        flex-direction: column;
+    }
+
+    .panel-details img, .advantages-details img, .installation-details img, .services-details img,
+    .panel-details p, .advantages-details ul, .installation-details p, .services-details ul {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
 }
 
 /* Footer styles */
 footer {
-    background-color: #000000; /* Primary color from the logo */
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 20px;
