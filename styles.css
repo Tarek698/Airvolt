@@ -1,0 +1,316 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Transitions globales */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3498db; /* Primary color from the logo */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1c40f; /* Secondary color from the logo */
+    transform: scale(1.1);
+}
+
+/* Dropdown menu styles */
+nav ul li.dropdown {
+    position: relative; /* Positioning for dropdown */
+}
+
+nav ul li a.dropdown-toggle {
+    cursor: pointer; /* Pointer cursor for dropdown toggle */
+}
+
+nav ul li ul.dropdown-menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+nav ul li ul.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li ul.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #3498db; /* Primary color from the logo */
+    text-decoration: none;
+    white-space: nowrap; /* Prevent wrapping */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li ul.dropdown-menu li a:hover {
+    background-color: #f1c40f; /* Secondary color from the logo */
+}
+
+/* Show the dropdown on hover */
+nav ul li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+
+/* Contact info styles */
+.contact-info {
+    text-align: right;
+}
+
+/* Hero section styles */
+.hero {
+    background: linear-gradient(to right, #3498db, #f1c40f); /* Gradient using logo colors */
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+
+.cta-button {
+    background-color: #3498db; /* Primary color from the logo */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f1c40f; /* Secondary color from the logo */
+    transform: scale(1.1);
+}
+
+/* Content sections styles */
+.about, .services, .quality, .news, .climatisation, .treatment-air {
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.about-content, .service, .quality-content, .news-item, .climatisation-content, .treatment-air-content {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.about-content h2, .service h3, .quality-text h2, .news-item h3, .climatisation-content h2, .treatment-air-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #3498db; /* Primary color from the logo */
+}
+
+.about-content p, .service p, .quality-text p, .news-item p, .climatisation-content p, .treatment-air-content p {
+    margin: 10px 0;
+}
+
+.service h3, .news-item h3, .climatisation-content h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.climatisation-content ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Quality content styles */
+.quality-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quality-logo img {
+    width: 200px; /* Updated width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.quality-logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Services section styles */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service {
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service img.service-logo {
+    width: 100px; /* Uniform size for all service logos */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+/* News section styles */
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-content {
+    display: flex;
+    align-items: center;
+}
+
+.news-content img.uniform-logo {
+    margin-right: 20px;
+    width: 200px; /* Updated width */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-content img.uniform-logo:hover {
+    transform: scale(1.1);
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.project-image {
+    flex: 0 0 200px; /* Updated width */
+    margin-left: 20px;
+}
+
+.project-image img.uniform-logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image img.uniform-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000; /* Primary color from the logo */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer:hover {
+    transform: scale(1.02);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

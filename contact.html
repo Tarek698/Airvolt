@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Volt - Contact</title>
+    <link rel="stylesheet" href="style_contact.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="Air Volt Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="acceuil.html">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Vos Besoins</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="chauffage.html">Chauffage</a></li>
+                            <li><a href="clim.html">Climatisation</a></li>
+                            <li><a href="electricite.html">Électricité</a></li>
+                            <li><a href="photovoltaique.html">Photovoltaïque</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="présentation.html">Présentation</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <span>+33 1 25 24 26 27</span>
+                <span>info@airvolt.fr</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contactez-nous</h1>
+            <p>Pour toute question ou demande de devis, n'hésitez pas à nous contacter.</p>
+        </div>
+    </section>
+
+    <section class="contact-section section-gray">
+        <div class="section-content">
+            <h2>Nos Coordonnées</h2>
+            <p><strong>Adresse :</strong> 123 Rue de l'Énergie, 75000 Paris, France</p>
+            <p><strong>Téléphone :</strong> +33 1 25 24 26 27</p>
+            <p><strong>Email :</strong> info@airvolt.fr</p>
+        </div>
+    </section>
+
+    <section class="contact-section section-white">
+        <div class="section-content">
+            <h2>Formulaire de Contact</h2>
+            <form action="submit_form.php" method="POST">
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map-section section-gray">
+        <div class="section-content">
+            <h2>Notre Localisation</h2>
+            <div id="map">
+                <!-- Intégration de la carte Google Maps -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Air Volt. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
