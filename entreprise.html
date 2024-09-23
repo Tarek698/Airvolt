@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services pour Entreprises - Airvolt</title>
+    <link rel="stylesheet" href="entreprises.css">
+    <!-- AOS CSS pour animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="path-to-logo.png" alt="Airvolt Logo">
+            <span class="logo-text">Airvolt</span>
+        </div>
+        <h1>Services pour les Entreprises</h1>
+    </div>
+    <div class="banner-buttons">
+        <a href="#services" class="btn-primary">Voir nos services</a>
+        <a href="#contact" class="btn-secondary">Contactez-nous</a>
+    </div>
+</header>
+
+<nav>
+    <a href="#hotel">Hôtel</a>
+    <a href="#bureau">Bureau</a>
+    <a href="#commerce">Commerce</a>
+    <a href="#datacenter">Centre de Données</a>
+    <a href="#cooling">Système de Refroidissement</a>
+</nav>
+
+<section id="hotel" data-aos="fade-up">
+    <div class="container">
+        <div class="text">
+            <h2><i class="fas fa-hotel"></i> Hôtel</h2>
+            <p>Des solutions adaptées pour les hôtels, garantissant confort et efficacité énergétique.</p>
+            <button class="learn-more" data-modal="hotelModal">En savoir plus</button>
+        </div>
+        <div class="image">
+            <img src="path-to-hotel-image.jpg" alt="Hôtel Image">
+        </div>
+    </div>
+</section>
+
+<section id="bureau" class="parallax" data-aos="fade-right">
+    <div class="container reverse">
+        <div class="text">
+            <h2><i class="fas fa-building"></i> Bureau</h2>
+            <p>Nos solutions pour les bureaux allient modernité et économie d'énergie, optimisées pour les environnements de travail.</p>
+            <button class="learn-more" data-modal="bureauModal">En savoir plus</button>
+        </div>
+        <div class="image">
+            <img src="path-to-bureau-image.jpg" alt="Bureau Image">
+        </div>
+    </div>
+</section>
+
+<section id="commerce" data-aos="fade-up">
+    <div class="container">
+        <div class="text">
+            <h2><i class="fas fa-shopping-cart"></i> Commerce</h2>
+            <p>Des services dédiés aux commerces pour améliorer l'efficacité énergétique et le confort des clients.</p>
+            <button class="learn-more" data-modal="commerceModal">En savoir plus</button>
+        </div>
+        <div class="image">
+            <img src="path-to-commerce-image.jpg" alt="Commerce Image">
+        </div>
+    </div>
+</section>
+
+<section id="datacenter" class="parallax" data-aos="fade-left">
+    <div class="container reverse">
+        <div class="text">
+            <h2><i class="fas fa-database"></i> Centre de Données</h2>
+            <p>Solutions pour les centres de données, assurant la performance tout en maîtrisant les coûts énergétiques.</p>
+            <button class="learn-more" data-modal="datacenterModal">En savoir plus</button>
+        </div>
+        <div class="image">
+            <img src="path-to-datacenter-image.jpg" alt="Centre de Données Image">
+        </div>
+    </div>
+</section>
+
+<section id="cooling" data-aos="fade-up">
+    <div class="container">
+        <div class="text">
+            <h2><i class="fas fa-fan"></i> Système de Refroidissement</h2>
+            <p>Nos systèmes de refroidissement de processeur garantissent des performances optimales et une gestion efficace de la chaleur.</p>
+            <button class="learn-more" data-modal="coolingModal">En savoir plus</button>
+        </div>
+        <div class="image">
+            <img src="path-to-cooling-image.jpg" alt="Système de Refroidissement Image">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Airvolt - Services pour Entreprises</p>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+<!-- Modals pour chaque section -->
+<div id="hotelModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Plus d'informations sur l'Hôtel</h2>
+        <p>Des détails supplémentaires sur les services offerts pour les hôtels...</p>
+    </div>
+</div>
+
+<div id="bureauModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Plus d'informations sur les Bureaux</h2>
+        <p>Des détails supplémentaires sur les solutions pour les bureaux...</p>
+    </div>
+</div>
+
+<div id="commerceModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Plus d'informations sur le Commerce</h2>
+        <p>Des détails supplémentaires sur les services pour le commerce...</p>
+    </div>
+</div>
+
+<div id="datacenterModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Plus d'informations sur les Centres de Données</h2>
+        <p>Des détails supplémentaires sur les services pour les centres de données...</p>
+    </div>
+</div>
+
+<div id="coolingModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Plus d'informations sur le Système de Refroidissement</h2>
+        <p>Des détails supplémentaires sur le système de refroidissement de processeur...</p>
+    </div>
+</div>
+
+<!-- Bouton pour remonter en haut de page -->
+<button id="scrollToTop" onclick="scrollToTop()">▲</button>
+
+<!-- JS AOS pour l'animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,  // Durée des animations (1.2 secondes)
+    });
+</script>
+
+<!-- JS pour le défilement fluide -->
+<script>
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+<!-- JS pour les modals -->
+<script>
+    var modals = document.querySelectorAll('.modal');
+    var buttons = document.querySelectorAll('.learn-more');
+    var spans = document.querySelectorAll('.close');
+
+    // Ouvrir le modal
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            var modalId = this.getAttribute('data-modal');
+            document.getElementById(modalId).style.display = "block";
+        });
+    });
+
+    // Fermer le modal
+    spans.forEach(span => {
+        span.onclick = function() {
+            modals.forEach(modal => modal.style.display = "none");
+        }
+    });
+
+    // Fermer si on clique en dehors du modal
+    window.onclick = function(event) {
+        modals.forEach(modal => {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    }
+</script>
+
+<!-- JS pour le bouton retour en haut -->
+<script>
+    window.onscroll = function() {
+        var button = document.getElementById("scrollToTop");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<!-- JS pour l'effet Tilt sur les images -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".image img"), {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5
+    });
+</script>
+
+</body>
+</html>
