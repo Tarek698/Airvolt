@@ -17,8 +17,8 @@
 <header>
     <div class="header-content">
         <div class="logo-container">
-            <img src="path-to-logo.png" alt="Airvolt Logo">
-            <span class="logo-text">Airvolt</span>
+            <img src="logo.png" alt="Airvolt Logo">
+            <span class="logo-text"></span>
         </div>
         <h1>Services pour les Entreprises</h1>
     </div>
@@ -29,39 +29,14 @@
 </header>
 
 <nav>
-    <a href="#hotel">Hôtel</a>
-    <a href="#bureau">Bureau</a>
     <a href="#commerce">Commerce</a>
+    <a href="#bureau">Bureau</a>
     <a href="#datacenter">Centre de Données</a>
     <a href="#cooling">Système de Refroidissement</a>
+    <a href="#hotel">Hôtel</a>
 </nav>
 
-<section id="hotel" data-aos="fade-up">
-    <div class="container">
-        <div class="text">
-            <h2><i class="fas fa-hotel"></i> Hôtel</h2>
-            <p>Des solutions adaptées pour les hôtels, garantissant confort et efficacité énergétique.</p>
-            <button class="learn-more" data-modal="hotelModal">En savoir plus</button>
-        </div>
-        <div class="image">
-            <img src="path-to-hotel-image.jpg" alt="Hôtel Image">
-        </div>
-    </div>
-</section>
-
-<section id="bureau" class="parallax" data-aos="fade-right">
-    <div class="container reverse">
-        <div class="text">
-            <h2><i class="fas fa-building"></i> Bureau</h2>
-            <p>Nos solutions pour les bureaux allient modernité et économie d'énergie, optimisées pour les environnements de travail.</p>
-            <button class="learn-more" data-modal="bureauModal">En savoir plus</button>
-        </div>
-        <div class="image">
-            <img src="path-to-bureau-image.jpg" alt="Bureau Image">
-        </div>
-    </div>
-</section>
-
+<!-- Commerce (Texte à gauche, Image à droite) -->
 <section id="commerce" data-aos="fade-up">
     <div class="container">
         <div class="text">
@@ -75,8 +50,23 @@
     </div>
 </section>
 
-<section id="datacenter" class="parallax" data-aos="fade-left">
+<!-- Bureau (Texte à droite, Image à gauche) -->
+<section id="bureau" class="parallax" data-aos="fade-right">
     <div class="container reverse">
+        <div class="text">
+            <h2><i class="fas fa-building"></i> Bureau</h2>
+            <p>Nos solutions pour les bureaux allient modernité et économie d'énergie, optimisées pour les environnements de travail.</p>
+            <button class="learn-more" data-modal="bureauModal">En savoir plus</button>
+        </div>
+        <div class="image">
+            <img src="path-to-bureau-image.jpg" alt="Bureau Image">
+        </div>
+    </div>
+</section>
+
+<!-- Centre de Données (Texte à gauche, Image à droite) -->
+<section id="datacenter" class="parallax" data-aos="fade-left">
+    <div class="container">
         <div class="text">
             <h2><i class="fas fa-database"></i> Centre de Données</h2>
             <p>Solutions pour les centres de données, assurant la performance tout en maîtrisant les coûts énergétiques.</p>
@@ -88,8 +78,9 @@
     </div>
 </section>
 
+<!-- Système de Refroidissement (Texte à droite, Image à gauche) -->
 <section id="cooling" data-aos="fade-up">
-    <div class="container">
+    <div class="container reverse">
         <div class="text">
             <h2><i class="fas fa-fan"></i> Système de Refroidissement</h2>
             <p>Nos systèmes de refroidissement de processeur garantissent des performances optimales et une gestion efficace de la chaleur.</p>
@@ -97,6 +88,20 @@
         </div>
         <div class="image">
             <img src="path-to-cooling-image.jpg" alt="Système de Refroidissement Image">
+        </div>
+    </div>
+</section>
+
+<!-- Hôtel (Texte à gauche, Image à droite) -->
+<section id="hotel" data-aos="fade-up">
+    <div class="container">
+        <div class="text">
+            <h2><i class="fas fa-hotel"></i> Hôtel</h2>
+            <p>Des solutions adaptées pour les hôtels, garantissant confort et efficacité énergétique.</p>
+            <button class="learn-more" data-modal="hotelModal">En savoir plus</button>
+        </div>
+        <div class="image">
+            <img src="path-to-hotel-image.jpg" alt="Hôtel Image">
         </div>
     </div>
 </section>
@@ -111,11 +116,11 @@
 </footer>
 
 <!-- Modals pour chaque section -->
-<div id="hotelModal" class="modal">
+<div id="commerceModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Plus d'informations sur l'Hôtel</h2>
-        <p>Des détails supplémentaires sur les services offerts pour les hôtels...</p>
+        <h2>Plus d'informations sur le Commerce</h2>
+        <p>Des détails supplémentaires sur les services pour le commerce...</p>
     </div>
 </div>
 
@@ -124,14 +129,6 @@
         <span class="close">&times;</span>
         <h2>Plus d'informations sur les Bureaux</h2>
         <p>Des détails supplémentaires sur les solutions pour les bureaux...</p>
-    </div>
-</div>
-
-<div id="commerceModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Plus d'informations sur le Commerce</h2>
-        <p>Des détails supplémentaires sur les services pour le commerce...</p>
     </div>
 </div>
 
@@ -148,6 +145,14 @@
         <span class="close">&times;</span>
         <h2>Plus d'informations sur le Système de Refroidissement</h2>
         <p>Des détails supplémentaires sur le système de refroidissement de processeur...</p>
+    </div>
+</div>
+
+<div id="hotelModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Plus d'informations sur l'Hôtel</h2>
+        <p>Des détails supplémentaires sur les services offerts pour les hôtels...</p>
     </div>
 </div>
 
