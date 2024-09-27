@@ -13,6 +13,15 @@
             <nav>
                 <ul>
                     <li><a href="acceuil.html">Accueil</a></li>
+                    <!-- NOS PRODUITS est déplacé avant VOS BESOINS -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Nos Produits</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="chauffage_produit.html">Chauffage</a></li>
+                            <li><a href="climatisation_produit.html">Climatisation</a></li>
+                            <li><a href="produit_electrique.html">Installation Électrique</a></li>
+                        </ul>
+                    </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Vos Besoins</a>
                         <ul class="dropdown-menu">
@@ -20,14 +29,6 @@
                             <li><a href="clim.html">Climatisation</a></li>
                             <li><a href="electricite.html">Électricité</a></li>
                             <li><a href="photovoltaique.html">Photovoltaïque</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Nos Produits</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="chauffage_produit.html">Chauffage</a></li>
-                            <li><a href="climatisation_produit.html">Climatisation</a></li>
-                            <li><a href="produit_electrique.html">Installation Électrique</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -47,6 +48,7 @@
             </div>
         </div>
     </header>
+
     <section class="hero">
         <div class="hero-content">
             <h1>AIRVOLT l'entreprise à votre écoute.</h1>
@@ -55,41 +57,13 @@
         </div>
     </section>
 
-    <section class="about">
-        <div class="about-content">
-            <h2>Un savoir faire français !</h2>
-            <p>Airvolt, c'est l'excellence et le savoir-faire français au service de vos installations. Nous réalisons l'étude, le montage et l'entretien de vos systèmes de chauffage, de climatisation, de plomberie et d'électricité. Notre équipe d'experts qualifiés met tout en œuvre pour vous fournir des solutions fiables, durables et adaptées à vos besoins spécifiques. Avec Airvolt, vous bénéficiez d'une expertise reconnue et d'un accompagnement personnalisé pour assurer le confort et la sécurité de votre habitation ou de votre entreprise. Faites confiance à notre savoir-faire français pour des installations de haute qualité.</p>
-        </div>
-    </section>
-
-    <section class="services">
-        <div class="service">
-            <a href="clim.html">
-                <img src="clim.png" alt="Climatisation" class="service-logo">
-            </a>
-            <h3>Climatisation</h3>
-            <p>texte</p>
-        </div>
-        <div class="service">
-            <a href="chauffage.html">
-                <img src="chauffage.png" alt="Pompes à chaleur" class="service-logo">
-            </a>
-            <h3>Pompes à chaleur</h3>
-            <p>texte</p>
-        </div>
-        <div class="service">
-            <a href="photovoltaique.html">
-                <img src="soleil.png" alt="renouvelable" class="service-logo">
-            </a>
-            <h3>Panneaux Photovoltaïque</h3>
-            <p>texte</p>
-        </div>
-        <div class="service">
-            <a href="electricite.html">
-                <img src="electricite.png" alt="Electricité" class="service-logo">
-            </a>
-            <h3>Electricité</h3>
-            <p>texte</p>
+    <!-- SECTION IMBRICATION DES IMAGES À LA PLACE DES SERVICES -->
+    <section class="image-gallery">
+        <div class="image-wrapper">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <img src="image4.jpg" alt="Image 4">
         </div>
     </section>
 
@@ -122,7 +96,7 @@
                     <p>Chez Airvolt, nous avons une solide expérience dans la réalisation de projets variés, allant de la simple cave à vins au bâtiment complet. Nous nous engageons à étudier attentivement vos projets afin de vous proposer des solutions parfaitement adaptées à vos besoins spécifiques. Notre équipe d'experts est à votre écoute pour comprendre vos exigences et vous conseiller de manière optimale. De plus, nous vous soumettons un devis concurrentiel, gratuit et sans engagement, vous permettant ainsi de prendre une décision éclairée. Faites confiance à Airvolt pour des réalisations de haute qualité, conçues pour répondre à vos attentes les plus exigeantes.</p>
                 </div>
                 <div class="project-image">
-                    <img src="devis-gratuit.png" alt="Projets Réalisés" class="uniform-logo">
+                    <img src="devis-gratuit.png" alt="Projets Réalisés" class="uniform-logo devis-gratuit">
                 </div>
             </div>
         </div>
@@ -135,5 +109,6 @@
     <footer>
         <p>&copy; 2024 Air Volt. Tous droits réservés.</p>
     </footer>
+
 </body>
 </html>
