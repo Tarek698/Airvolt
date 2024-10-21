@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air Volt - Climatisation et Traitement de l'air</title>
+    <title>Panneaux Photovoltaïques - Airvolt</title>
     <link rel="stylesheet" href="style_clim.css">
 </head>
 <body>
+
     <header>
         <div class="header-content">
             <img src="logo.png" alt="Air Volt Logo" class="logo">
@@ -19,7 +20,8 @@
                         <ul class="dropdown-menu">
                             <li><a href="chauffage_produit.html">Chauffage</a></li>
                             <li><a href="climatisation_produit.html">Climatisation</a></li>
-                            <li><a href="produit_electrique.html">Installation Électrique</a></li>
+                            <li><a href="produit_ventilation.html">Ventilation</a></li>
+                            <li><a href="photovoltaique_produit.html">Panneaux Photovoltaïques</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -49,7 +51,7 @@
         </div>
     </header>
 
-
+    <!-- SECTION HERO -->
     <section class="hero">
         <div class="hero-content">
             <h1>Climatisation et Traitement de l'air</h1>
@@ -57,136 +59,96 @@
         </div>
     </section>
 
-    <section class="climatisation-category section-gray">
-        <div class="category-content">
-            <h2>Habitations : Économies, confort en environnement résidentiel</h2>
-            <div class="category-details">
-                <img src="habitations.jpg" alt="Habitations">
-                <ul>
-                    <li>Des groupes ultra-performants de chauffage incomparable</li>
-                    <li>Chauffage et rafraîchissement planchers chauffants</li>
-                    <li>Eau chaude sanitaire par récupération de l’énergie de climatisation l’été</li>
-                    <li>Des unités design, confortables et de petite puissance (1500 W froid)</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
-        </div>
+    <!-- MENU NAVIGATION -->
+    <section class="tab-navigation">
+        <ul class="tab-menu">
+            <li class="tab-item active" data-target="#tab-climatisation">Climatisation Réversible</li>
+            <li class="tab-item" data-target="#tab-solutions">Solutions pour Habitations et Entreprises</li>
+            <li class="tab-item" data-target="#tab-ventilation">Systèmes de Ventilation</li>
+            <li class="tab-item" data-target="#tab-entretien">Entretien et Air Purifié</li>
+            <li class="tab-item" data-target="#tab-regulation">Régulation Thermique</li>
+        </ul>
     </section>
 
-    <section class="climatisation-category section-white">
-        <div class="category-content">
-            <h2>Bureaux et installations adaptées pour les grands espaces</h2>
-            <div class="category-details">
-                <img src="bureaux.jpg" alt="Bureaux">
-                <ul>
-                    <li>Systèmes de climatisation centralisée</li>
-                    <li>Distribution de l’air optimisée pour un confort maximal</li>
-                    <li>Solutions énergétiques pour réduire la consommation</li>
-                    <li>Maintenance et service après-vente réactifs</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
+    <!-- CONTENU DES TABS -->
+    <section class="tab-content">
+        <!-- Tab 1: Climatisation Réversible -->
+        <div id="tab-climatisation" class="tab-pane active">
+            <h2>Climatisation Réversible</h2>
+            <p>Installation, entretien et dépannage de systèmes de climatisation réversible.</p>
+            <img src="climatisation-reversible.jpg" alt="Climatisation Réversible">
+            <p>
+                Les systèmes de climatisation réversible sont parfaits pour une gestion optimale de la température. Ils permettent à la fois de chauffer en hiver et
+                de rafraîchir en été, offrant ainsi un confort optimal tout au long de l'année. Nos experts vous accompagnent pour l'installation, l'entretien, et
+                les réparations de ces systèmes.
+            </p>
         </div>
-    </section>
 
-    <section class="climatisation-category section-gray">
-        <div class="category-content">
-            <h2>Commerces et industries : Solutions adaptées</h2>
-            <div class="category-details">
-                <img src="commerces.jpg" alt="Commerces">
-                <ul>
-                    <li>Climatisation pour les espaces commerciaux</li>
-                    <li>Systèmes de régulation de température pour les industries</li>
-                    <li>Réduction des coûts énergétiques</li>
-                    <li>Solutions sur mesure selon vos besoins</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
+        <!-- Tab 2: Solutions pour Habitations et Entreprises -->
+        <div id="tab-solutions" class="tab-pane">
+            <h2>Solutions pour Habitations et Entreprises</h2>
+            <p>Des solutions adaptées pour les maisons, appartements et bâtiments d'entreprise.</p>
+            <img src="solutions-clim.jpg" alt="Solutions pour Habitations et Entreprises">
+            <p>
+                Air Volt propose des solutions de climatisation et de chauffage adaptées à vos besoins spécifiques, que vous soyez un particulier ou une entreprise.
+                Nos systèmes assurent une performance élevée tout en réduisant votre consommation énergétique.
+            </p>
         </div>
-    </section>
 
-    <section class="climatisation-category section-white">
-        <div class="category-content">
-            <h2>Serveurs informatiques : Climatisation de précision</h2>
-            <div class="category-details">
-                <img src="serveurs.jpg" alt="Serveurs">
-                <ul>
-                    <li>Systèmes de climatisation de haute précision</li>
-                    <li>Contrôle de l’humidité et de la température</li>
-                    <li>Solutions redondantes pour assurer la continuité</li>
-                    <li>Maintenance et supervision 24/7</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
+        <!-- Tab 3: Systèmes de Ventilation -->
+        <div id="tab-ventilation" class="tab-pane">
+            <h2>Systèmes de Ventilation</h2>
+            <p>Mise en place de systèmes de ventilation pour une qualité de l'air améliorée.</p>
+            <img src="ventilation-system.jpg" alt="Systèmes de Ventilation">
+            <p>
+                Nos systèmes de ventilation assurent un renouvellement constant de l'air et permettent une purification efficace. Que ce soit pour les habitations,
+                les bureaux ou les espaces industriels, nous mettons en place des systèmes sur mesure pour améliorer la qualité de votre air intérieur.
+            </p>
         </div>
-    </section>
 
-    <section class="treatment-category section-gray">
-        <div class="category-content">
-            <h2>Ventilation</h2>
-            <div class="category-details">
-                <img src="ventilation.jpg" alt="Ventilation">
-                <ul>
-                    <li>Ventilation mécanique contrôlée (VMC)</li>
-                    <li>Renouvellement et purification de l'air intérieur</li>
-                    <li>Réduction des allergènes et des polluants</li>
-                    <li>Installation et entretien des systèmes de ventilation</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
+        <!-- Tab 4: Entretien et Air Purifié -->
+        <div id="tab-entretien" class="tab-pane">
+            <h2>Entretien et Air Purifié</h2>
+            <p>Des services d'entretien pour garantir un air sain et purifié.</p>
+            <img src="entretien-air.jpg" alt="Entretien et Air Purifié">
+            <p>
+                Un entretien régulier de vos systèmes de climatisation et de ventilation permet de garantir un air purifié et une qualité d'air optimale dans vos
+                espaces. Nos techniciens sont spécialisés dans le nettoyage des systèmes de filtration pour assurer votre confort et votre santé.
+            </p>
         </div>
-    </section>
 
-    <section class="treatment-category section-white">
-        <div class="category-content">
-            <h2>Déshumidification</h2>
-            <div class="category-details">
-                <img src="deshumidification.jpg" alt="Déshumidification">
-                <ul>
-                    <li>Élimination de l'excès d'humidité</li>
-                    <li>Prévention de la moisissure et des dégâts des eaux</li>
-                    <li>Systèmes pour piscines et spas</li>
-                    <li>Solutions pour environnements industriels</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
-        </div>
-    </section>
-
-    <section class="treatment-category section-gray">
-        <div class="category-content">
-            <h2>Purification de l'air</h2>
-            <div class="category-details">
-                <img src="purification-air.jpg" alt="Purification de l'air">
-                <ul>
-                    <li>Systèmes de filtration de haute efficacité</li>
-                    <li>Réduction des allergènes et des polluants</li>
-                    <li>Amélioration de la qualité de l'air intérieur</li>
-                    <li>Solutions pour environnements résidentiels et commerciaux</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
-        </div>
-    </section>
-
-    <section class="treatment-category section-white">
-        <div class="category-content">
-            <h2>Confort thermique</h2>
-            <div class="category-details">
-                <img src="confort-thermique.jpg" alt="Confort thermique">
-                <ul>
-                    <li>Gestion optimale de la température</li>
-                    <li>Solutions pour le chauffage et la climatisation</li>
-                    <li>Réduction de la consommation énergétique</li>
-                    <li>Amélioration du bien-être au quotidien</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
+        <!-- Tab 5: Régulation Thermique -->
+        <div id="tab-regulation" class="tab-pane">
+            <h2>Régulation Thermique</h2>
+            <p>Optimisation de la régulation thermique pour un confort parfait.</p>
+            <img src="regulation-thermique.jpg" alt="Régulation Thermique">
+            <p>
+                Nos systèmes de régulation thermique permettent d'ajuster automatiquement la température pour un confort optimal et une consommation énergétique
+                réduite. Ces solutions sont adaptées pour les résidences, bureaux, et environnements commerciaux.
+            </p>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Air Volt. Tous droits réservés.</p>
     </footer>
+
+    <!-- JavaScript pour les onglets -->
+    <script>
+    document.querySelectorAll('.tab-item').forEach(item => {
+        item.addEventListener('click', function() {
+            // Désactiver tous les onglets
+            document.querySelectorAll('.tab-item').forEach(i => i.classList.remove('active'));
+            // Masquer tous les contenus
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+            
+            // Activer l'onglet cliqué
+            this.classList.add('active');
+            // Montrer le contenu correspondant
+            const target = this.getAttribute('data-target');
+            document.querySelector(target).classList.add('active');
+        });
+    });
+    </script>
 </body>
 </html>

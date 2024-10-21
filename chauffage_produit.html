@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chauffage - Airvolt</title>
+    <title>Panneaux Photovoltaïques - Airvolt</title>
     <link rel="stylesheet" href="chauff.css">
 </head>
 <body>
@@ -20,7 +20,8 @@
                         <ul class="dropdown-menu">
                             <li><a href="chauffage_produit.html">Chauffage</a></li>
                             <li><a href="climatisation_produit.html">Climatisation</a></li>
-                            <li><a href="produit_electrique.html">Installation Électrique</a></li>
+                            <li><a href="produit_ventilation.html">Ventilation</a></li>
+                            <li><a href="photovoltaique_produit.html">Panneaux Photovoltaïques</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -50,48 +51,64 @@
         </div>
     </header>
 
-    <!-- Section bannière avec image de fond -->
-    <section class="hero-chauffage">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h1>Chauffage - Les Solutions Airvolt</h1>
-                <p>Découvrez nos systèmes de chauffage écoénergétiques, conçus pour offrir un confort thermique optimal tout au long de l'année.</p>
-            </div>
+    <!-- SECTION HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Chauffage - Les Solutions Airvolt</h1>
+            <p>Découvrez nos systèmes de chauffage écoénergétiques, conçus pour offrir un confort thermique optimal tout au long de l'année.</p>
         </div>
     </section>
 
-    <!-- Section d'introduction du produit -->
-    <section class="intro-produit">
-        <div class="container">
-            <div class="text">
-                <h2>Le chauffage à la pointe de la technologie</h2>
-                <p>Nos systèmes de chauffage sont équipés de technologies de pointe pour offrir une efficacité énergétique maximale tout en maintenant un confort optimal. Que ce soit pour une maison ou un espace commercial, nous avons des solutions adaptées à vos besoins spécifiques.</p>
-            </div>
-            <div class="image">
-                <img src="path-to-chauffage-image.jpg" alt="Chauffage Image">
-            </div>
-        </div>
+    <!-- MENU NAVIGATION -->
+    <section class="tab-navigation">
+        <ul class="tab-menu">
+            <li class="tab-item active" data-target="#tab-air-eau">Pompe à chaleur air/eau</li>
+            <li class="tab-item" data-target="#tab-air-air">Pompes à chaleur air/air</li>
+            <li class="tab-item" data-target="#tab-hybrides">Pompes à chaleur hybrides</li>
+            <li class="tab-item" data-target="#tab-thermodynamique">Chauffe-eau thermodynamique</li>
+        </ul>
     </section>
 
-    <!-- Section Avantages -->
-    <section class="advantages">
-        <div class="container">
-            <h2>Pourquoi choisir nos solutions de chauffage ?</h2>
-            <ul>
-                <li>Efficacité énergétique supérieure, réduisant vos coûts de chauffage.</li>
-                <li>Technologie silencieuse pour un confort discret.</li>
-                <li>Système de chauffage adaptable à toutes les tailles d'espaces.</li>
-                <li>Fonctionnalité réversible pour chauffage et climatisation combinés.</li>
-            </ul>
+    <!-- CONTENU DES TABS -->
+    <section class="tab-content">
+        <!-- Tab 1: Pompe à chaleur air/eau -->
+        <div id="tab-air-eau" class="tab-pane active">
+            <h2>Pompe à chaleur air/eau</h2>
+            <p>Le système idéal pour chauffer votre maison tout en économisant de l'énergie.</p>
+            <img src="air-eau.jpg" alt="Pompe à chaleur air/eau">
+            <p>
+                La pompe à chaleur air/eau capte les calories de l'air extérieur pour chauffer votre eau et alimenter votre système de chauffage, offrant un excellent rendement énergétique.
+            </p>
         </div>
-    </section>
 
-    <!-- Section appel à l'action -->
-    <section class="cta">
-        <div class="cta-content">
-            <h2>Besoin d'installer un nouveau système de chauffage ?</h2>
-            <p>Demandez un devis gratuit dès maintenant et découvrez nos solutions de chauffage adaptées à vos besoins.</p>
-            <a href="contact.html" class="cta-button">Demande de devis</a>
+        <!-- Tab 2: Pompes à chaleur air/air -->
+        <div id="tab-air-air" class="tab-pane">
+            <h2>Pompes à chaleur air/air</h2>
+            <p>Une solution réversible qui chauffe en hiver et rafraîchit en été.</p>
+            <img src="air-air.jpg" alt="Pompes à chaleur air/air">
+            <p>
+                Ces systèmes sont parfaits pour ceux qui cherchent un confort thermique tout au long de l'année, avec une climatisation l'été et un chauffage l'hiver.
+            </p>
+        </div>
+
+        <!-- Tab 3: Pompes à chaleur hybrides -->
+        <div id="tab-hybrides" class="tab-pane">
+            <h2>Pompes à chaleur hybrides</h2>
+            <p>Alliez les avantages des énergies renouvelables et des combustibles fossiles.</p>
+            <img src="hybrides.jpg" alt="Pompes à chaleur hybrides">
+            <p>
+                Les pompes à chaleur hybrides combinent une pompe à chaleur avec une chaudière à gaz ou à fioul pour une efficacité maximale, même lors des journées les plus froides.
+            </p>
+        </div>
+
+        <!-- Tab 4: Chauffe-eau thermodynamique -->
+        <div id="tab-thermodynamique" class="tab-pane">
+            <h2>Chauffe-eau thermodynamique</h2>
+            <p>Une solution écologique pour chauffer votre eau sanitaire.</p>
+            <img src="thermodynamique.jpg" alt="Chauffe-eau thermodynamique">
+            <p>
+                Le chauffe-eau thermodynamique utilise une petite pompe à chaleur pour chauffer l'eau de votre foyer, offrant une réduction significative de la consommation d'énergie.
+            </p>
         </div>
     </section>
 
@@ -99,5 +116,22 @@
         <p>&copy; 2024 Air Volt. Tous droits réservés.</p>
     </footer>
 
+    <!-- JavaScript pour les onglets -->
+    <script>
+    document.querySelectorAll('.tab-item').forEach(item => {
+        item.addEventListener('click', function() {
+            // Désactiver tous les onglets
+            document.querySelectorAll('.tab-item').forEach(i => i.classList.remove('active'));
+            // Masquer tous les contenus
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+            
+            // Activer l'onglet cliqué
+            this.classList.add('active');
+            // Montrer le contenu correspondant
+            const target = this.getAttribute('data-target');
+            document.querySelector(target).classList.add('active');
+        });
+    });
+    </script>
 </body>
 </html>

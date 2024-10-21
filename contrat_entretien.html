@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contrat d'entretien - Airvolt</title>
+    <title>Panneaux Photovoltaïques - Airvolt</title>
     <link rel="stylesheet" href="contrat_entretien.css">
 </head>
 <body>
 
-    <!-- HEADER COMPLET -->
     <header>
         <div class="header-content">
             <img src="logo.png" alt="Air Volt Logo" class="logo">
@@ -21,7 +20,8 @@
                         <ul class="dropdown-menu">
                             <li><a href="chauffage_produit.html">Chauffage</a></li>
                             <li><a href="climatisation_produit.html">Climatisation</a></li>
-                            <li><a href="produit_electrique.html">Installation Électrique</a></li>
+                            <li><a href="produit_ventilation.html">Ventilation</a></li>
+                            <li><a href="photovoltaique_produit.html">Panneaux Photovoltaïques</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -51,8 +51,7 @@
         </div>
     </header>
 
-
-    <!-- SECTION BANNIÈRE -->
+    <!-- SECTION HERO -->
     <section class="hero-contrat">
         <div class="hero-overlay">
             <div class="hero-content">
@@ -62,44 +61,64 @@
         </div>
     </section>
 
-    <!-- SECTION INTRODUCTION AVEC IMAGE À GAUCHE -->
-    <section class="intro-contrat">
-        <div class="container">
-            <div class="image-left">
-                <img src="path-to-intro-image.jpg" alt="Service de maintenance">
-            </div>
-            <div class="text-right">
-                <h2>Pourquoi choisir un contrat d'entretien Airvolt ?</h2>
-                <p>Nos contrats d'entretien vous permettent de profiter de services de maintenance régulière, prévenant les pannes et prolongeant la durée de vie de vos systèmes.</p>
-                <p>Nous assurons l'inspection et la réparation de vos installations pour garantir votre confort tout au long de l'année.</p>
-            </div>
-        </div>
+    <!-- MENU NAVIGATION -->
+    <section class="tab-navigation">
+        <ul class="tab-menu">
+            <li class="tab-item active" data-target="#tab-climatisation">Entretien Climatisation</li>
+            <li class="tab-item" data-target="#tab-chauffage">Entretien Chauffage et Eau Chaude</li>
+            <li class="tab-item" data-target="#tab-ventilation">Entretien Ventilation</li>
+            <li class="tab-item" data-target="#tab-photovoltaique">Entretien Photovoltaïque et Toiture</li>
+        </ul>
     </section>
 
-    <!-- SECTION AVANTAGES AVEC IMAGE À DROITE -->
-    <section class="advantages">
-        <div class="container reverse">
-            <div class="text-left">
-                <h2>Les avantages de nos contrats</h2>
-                <ul>
-                    <li>Visites régulières pour vérifier le bon fonctionnement de vos installations.</li>
-                    <li>Réparations prioritaires en cas de panne.</li>
-                    <li>Réductions sur les pièces et la main d'œuvre.</li>
-                    <li>Rapports détaillés après chaque inspection.</li>
-                </ul>
-            </div>
-            <div class="image-right">
-                <img src="path-to-advantages-image.jpg" alt="Inspection technique">
-            </div>
+    <!-- CONTENU DES TABS -->
+    <section class="tab-content">
+        <!-- Tab 1: Entretien Climatisation -->
+        <div id="tab-climatisation" class="tab-pane active">
+            <h2>Entretien Climatisation</h2>
+            <p>Entretien régulier des systèmes de climatisation réversible pour garantir leur bon fonctionnement.</p>
+            <img src="climatisation-entretien.jpg" alt="Entretien Climatisation">
+            <ul>
+                <li><strong>Vérification des filtres :</strong> Nettoyage ou remplacement pour garantir une qualité d’air optimale.</li>
+                <li><strong>Nettoyage des unités :</strong> Nettoyage des composants internes pour éviter les blocages et la surchauffe.</li>
+                <li><strong>Contrôle des performances :</strong> Tests pour assurer l’efficacité et prévenir les dysfonctionnements.</li>
+            </ul>
         </div>
-    </section>
 
-    <!-- SECTION APPEL À L'ACTION -->
-    <section class="cta">
-        <div class="cta-content">
-            <h2>Besoin d'un contrat d'entretien ?</h2>
-            <p>Contactez-nous pour en savoir plus sur nos offres de maintenance adaptées à vos besoins.</p>
-            <a href="contact.html" class="cta-button">Demande d'information</a>
+        <!-- Tab 2: Entretien Chauffage et Eau Chaude -->
+        <div id="tab-chauffage" class="tab-pane">
+            <h2>Entretien Chauffage et Eau Chaude</h2>
+            <p>Entretien complet des systèmes de chauffage et des circuits d'eau chaude pour assurer leur durabilité.</p>
+            <img src="chauffage-entretien.jpg" alt="Entretien Chauffage">
+            <ul>
+                <li><strong>Maintenance des chauffages :</strong> Entretien des chaudières et pompes à chaleur pour maximiser leur efficacité.</li>
+                <li><strong>Désembouage :</strong> Élimination des dépôts dans les circuits pour améliorer la circulation et la performance.</li>
+                <li><strong>Purge des radiateurs :</strong> Libération de l’air emprisonné pour un fonctionnement optimal du système de chauffage.</li>
+                <li><strong>Vérification des performances énergétiques :</strong> Ajustements pour maximiser l'efficacité et réduire la consommation d’énergie.</li>
+            </ul>
+        </div>
+
+        <!-- Tab 3: Entretien Ventilation -->
+        <div id="tab-ventilation" class="tab-pane">
+            <h2>Entretien Ventilation</h2>
+            <p>Entretien des systèmes de ventilation pour garantir un air pur et sain dans votre habitation.</p>
+            <img src="ventilation-entretien.jpg" alt="Entretien Ventilation">
+            <ul>
+                <li><strong>Nettoyage des installations :</strong> Nettoyage des conduits et des filtres pour maintenir une qualité d'air optimale.</li>
+                <li><strong>Vérification des systèmes :</strong> Contrôle du bon fonctionnement des systèmes de régulation thermique.</li>
+            </ul>
+        </div>
+
+        <!-- Tab 4: Entretien Photovoltaïque et Toiture -->
+        <div id="tab-photovoltaique" class="tab-pane">
+            <h2>Entretien Photovoltaïque et Toiture</h2>
+            <p>Maintenance des panneaux solaires photovoltaïques et entretien de la toiture pour assurer une production d’énergie constante.</p>
+            <img src="photovoltaique-entretien.jpg" alt="Entretien Photovoltaïque">
+            <ul>
+                <li><strong>Maintenance des panneaux :</strong> Vérification et nettoyage des panneaux pour optimiser la production d’électricité verte.</li>
+                <li><strong>Contrôle des performances :</strong> Surveillance des performances pour assurer une production efficace tout au long de l’année.</li>
+                <li><strong>Entretien préventif :</strong> Inspections régulières pour prévenir les pannes et prolonger la durée de vie des équipements.</li>
+            </ul>
         </div>
     </section>
 
@@ -108,5 +127,22 @@
         <p>&copy; 2024 Air Volt. Tous droits réservés.</p>
     </footer>
 
+    <!-- JavaScript pour les onglets -->
+    <script>
+    document.querySelectorAll('.tab-item').forEach(item => {
+        item.addEventListener('click', function() {
+            // Désactiver tous les onglets
+            document.querySelectorAll('.tab-item').forEach(i => i.classList.remove('active'));
+            // Masquer tous les contenus
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+            
+            // Activer l'onglet cliqué
+            this.classList.add('active');
+            // Montrer le contenu correspondant
+            const target = this.getAttribute('data-target');
+            document.querySelector(target).classList.add('active');
+        });
+    });
+    </script>
 </body>
 </html>

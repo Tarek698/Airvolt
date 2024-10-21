@@ -157,9 +157,6 @@ nav ul li:hover .dropdown-menu {
     color: #fff;
     padding: 150px 20px;
     text-align: center;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero-overlay {
@@ -190,139 +187,67 @@ nav ul li:hover .dropdown-menu {
     color: #fff;
 }
 
-/* SECTION INTRODUCTION - IMAGE À GAUCHE */
-.intro-contrat .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.intro-contrat .image-left {
-    flex: 1;
-    max-width: 40%;
-}
-
-.intro-contrat .image-left img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.intro-contrat .text-right {
-    flex: 1;
-    padding-left: 20px;
-}
-
-.intro-contrat h2 {
-    font-size: 2.5em;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-.intro-contrat p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-/* SECTION AVANTAGES - IMAGE À DROITE */
-.advantages .container {
-    display: flex; /* Utilisation de flex pour aligner les éléments */
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.advantages .container.reverse {
-    flex-direction: row; /* Inverser la direction pour alterner image/texte */
-}
-
-.advantages .text-left {
-    flex: 1; /* Assure que le texte occupe tout l'espace disponible à gauche */
-    padding-left: 20px; /* Espacement avec l'image */
-    text-align: left; /* Forcer l'alignement du texte à gauche */
-}
-
-.advantages h2 {
-    font-size: 2.5em;
-    color: #3498db;
-    margin-bottom: 30px;
-}
-
-.advantages ul {
-    list-style: none;
-    padding: 0;
-}
-
-.advantages ul li {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.advantages .image-right {
-    flex: 1; /* L'image prend le reste de l'espace */
-    max-width: 40%; /* Limite la taille de l'image */
-    margin-left: 50px; /* Espacement entre le texte et l'image */
-}
-
-.advantages .image-right img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-/* SECTION APPEL À L'ACTION */
-.cta {
-    background-color: #3498db;
-    color: #fff;
-    padding: 60px 20px;
+/* MENU NAVIGATION */
+.tab-navigation {
+    margin-top: 30px;
+    border-bottom: 2px solid #ddd;
     text-align: center;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.cta h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.tab-menu {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 10px;
+    justify-content: center;
 }
 
-.cta p {
+.tab-item {
     font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    background-color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
     color: #3498db;
-    padding: 15px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    margin: 0 15px;
 }
 
-.cta-button:hover {
-    background-color: #f1c40f;
-    color: #fff;
+.tab-item:hover,
+.tab-item.active {
+    color: #f1c40f;
+    border-bottom: 2px solid #3498db;
+}
+
+/* CONTENU DES TABS */
+.tab-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
 }
 
 /* FOOTER */
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: #3498db;
+    color: white;
     text-align: center;
     padding: 20px;
-    border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 50px;
 }

@@ -1,4 +1,4 @@
-/* Réinitialisation générale */
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +8,20 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
-    background-color: #f8f9fa;
+   /* padding: 100px; */
 }
 
-/* HEADER */
+/* Global transitions */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header styles */
 header {
     background-color: #fff;
-   
+    
 }
 
 .header-content {
@@ -38,7 +44,6 @@ nav ul {
 
 nav ul li {
     margin-left: 20px;
-    position: relative;
 }
 
 nav ul li a {
@@ -68,6 +73,7 @@ nav ul li a:hover {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
 .dropdown-menu li {
     list-style: none;
 }
@@ -77,10 +83,12 @@ nav ul li a:hover {
     color: #3498db;
     white-space: nowrap;
 }
+
 .dropdown-menu li a:hover {
     background-color: #f1c40f;
-    color: white;
+    color: #fff;
 }
+
 /* Contact info in header */
 .contact-info {
     text-align: right;
@@ -140,7 +148,7 @@ nav ul li:hover .dropdown-menu {
     color: white;
 }
 
-/* HERO SECTION */
+/* Hero section */
 .hero {
     background: linear-gradient(to right, #3498db, #f1c40f);
     color: #fff;

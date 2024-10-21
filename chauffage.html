@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air Volt - Chauffage et Pompes à Chaleur</title>
+    <title>Panneaux Photovoltaïques - Airvolt</title>
     <link rel="stylesheet" href="style_chauffage.css">
 </head>
 <body>
+
     <header>
         <div class="header-content">
             <img src="logo.png" alt="Air Volt Logo" class="logo">
@@ -19,7 +20,8 @@
                         <ul class="dropdown-menu">
                             <li><a href="chauffage_produit.html">Chauffage</a></li>
                             <li><a href="climatisation_produit.html">Climatisation</a></li>
-                            <li><a href="produit_electrique.html">Installation Électrique</a></li>
+                            <li><a href="produit_ventilation.html">Ventilation</a></li>
+                            <li><a href="photovoltaique_produit.html">Panneaux Photovoltaïques</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -48,8 +50,7 @@
             </div>
         </div>
     </header>
-
-
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content">
             <h1>Chauffage et Pompes à Chaleur</h1>
@@ -57,83 +58,101 @@
         </div>
     </section>
 
-    <section class="heating-category section-gray">
-        <div class="category-content">
-            <h2>Économie et Confort pour les Résidences</h2>
-            <div class="category-details">
-                <img src="residences.jpg" alt="Résidences">
-                <ul>
-                    <li>Systèmes de chauffage performants et écologiques</li>
-                    <li>Réduction des coûts énergétiques</li>
-                    <li>Confort thermique optimal</li>
-                    <li>Intégration esthétique dans votre maison</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
-        </div>
+    <!-- MENU NAVIGATION -->
+    <section class="tab-navigation">
+        <ul class="tab-menu">
+            <li class="tab-item active" data-target="#tab-chauffage">Chauffage et Eau Chaude</li>
+            <li class="tab-item" data-target="#tab-solutions">Solutions d'Eau Chaude</li>
+            <li class="tab-item" data-target="#tab-diagnostic">Diagnostic et Optimisation</li>
+            <li class="tab-item" data-target="#tab-interventions">Interventions sur Mesure</li>
+        </ul>
     </section>
 
-    <section class="heating-category section-white">
-        <div class="category-content">
-            <h2>Solutions pour les Bureaux et Grands Espaces</h2>
-            <div class="category-details">
-                <img src="bureaux.jpg" alt="Bureaux">
-                <ul>
-                    <li>Chauffage centralisé et efficace</li>
-                    <li>Distribution uniforme de la chaleur</li>
-                    <li>Solutions adaptées aux grandes superficies</li>
-                    <li>Maintenance et service après-vente rapides</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
+    <!-- CONTENU DES TABS -->
+    <section class="tab-content">
+        <!-- Tab 1: Chauffage et Eau Chaude -->
+        <div id="tab-chauffage" class="tab-pane active">
+            <h2>Chauffage et Eau Chaude</h2>
+            <p>Installation de chauffages électriques, chaudières et pompes à chaleur (air/air et air/eau).</p>
+            <img src="chauffage-electrique.jpg" alt="Chauffage Électrique">
+            <p>
+                Nos solutions de chauffage vous assurent une performance optimale tout en réduisant vos consommations énergétiques.
+                Que ce soit pour une maison, un appartement ou un bâtiment commercial, nous avons la solution adaptée. Nos équipes sont
+                formées pour installer des systèmes de chauffage électriques ou des pompes à chaleur de manière professionnelle et rapide.
+            </p>
+            <p>
+                Grâce à nos produits innovants et à la technologie des pompes à chaleur, vous pouvez non seulement chauffer mais aussi rafraîchir
+                vos espaces avec un seul appareil. Demandez votre devis gratuit pour en savoir plus !
+            </p>
         </div>
-    </section>
 
-    <section class="heating-category section-gray">
-        <div class="category-content">
-            <h2>Chauffage pour Commerces et Industries</h2>
-            <div class="category-details">
-                <img src="commerces.jpg" alt="Commerces">
-                <ul>
-                    <li>Systèmes de chauffage pour espaces commerciaux</li>
-                    <li>Réduction de la consommation énergétique</li>
-                    <li>Chauffage adapté aux besoins industriels</li>
-                    <li>Solutions personnalisées pour chaque secteur</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
+        <!-- Tab 2: Solutions d'Eau Chaude -->
+        <div id="tab-solutions" class="tab-pane">
+            <h2>Solutions pour la Production d'Eau Chaude</h2>
+            <p>Chauffe-eau électriques, ballons thermodynamiques, etc.</p>
+            <img src="chauffe-eau.jpg" alt="Solutions Eau Chaude">
+            <p>
+                Nous proposons plusieurs solutions pour la production d’eau chaude afin de répondre à tous les besoins. Nos chauffe-eau électriques
+                sont particulièrement adaptés aux petits espaces, tandis que les ballons thermodynamiques offrent une option plus durable pour
+                les grandes maisons ou les entreprises.
+            </p>
+            <p>
+                Chaque solution est conçue pour garantir une production d'eau chaude régulière tout en minimisant les pertes d'énergie. Faites confiance à Air Volt pour
+                l'installation et la maintenance de vos systèmes d'eau chaude.
+            </p>
         </div>
-    </section>
 
-    <section class="heating-category section-white">
-        <div class="category-content">
-            <h2>Chauffage pour les Serveurs Informatiques</h2>
-            <div class="category-details">
-                <img src="serveurs.jpg" alt="Serveurs">
-                <ul>
-                    <li>Maintien de la température idéale</li>
-                    <li>Gestion précise de l'humidité</li>
-                    <li>Systèmes de chauffage redondants pour la sécurité</li>
-                    <li>Surveillance continue et maintenance</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
+        <!-- Tab 3: Diagnostic et Optimisation -->
+        <div id="tab-diagnostic" class="tab-pane">
+            <h2>Diagnostic et Optimisation Énergétique</h2>
+            <p>Évaluation des besoins énergétiques et conseils d'optimisation.</p>
+            <img src="diagnostic.jpg" alt="Diagnostic Énergétique">
+            <p>
+                Nos experts effectuent un diagnostic complet de vos systèmes de chauffage pour identifier les points d’amélioration possibles.
+                Cela permet non seulement de réduire vos coûts énergétiques, mais aussi d'optimiser le confort thermique de votre habitat.
+            </p>
+            <p>
+                Grâce à des outils de diagnostic avancés, nous analysons la consommation énergétique et proposons des solutions pour optimiser vos installations,
+                tout en garantissant une efficacité énergétique maximale.
+            </p>
         </div>
-    </section>
 
-    <section class="heating-category section-gray">
-        <div class="category-content">
-            <h2>Pompes à Chaleur : Une Solution Écologique</h2>
-            <div class="category-details">
-                <img src="pompes-a-chaleur.jpg" alt="Pompes à Chaleur">
-                <p>Les pompes à chaleur sont une solution de chauffage durable qui utilisent les calories présentes dans l'air, l'eau ou le sol pour chauffer votre maison ou votre entreprise. Elles sont non seulement écologiques mais aussi très économiques, réduisant considérablement vos factures de chauffage.</p>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
+        <!-- Tab 4: Interventions sur Mesure -->
+        <div id="tab-interventions" class="tab-pane">
+            <h2>Interventions sur Mesure</h2>
+            <p>Des interventions adaptées pour tous types de bâtiments.</p>
+            <img src="intervention.jpg" alt="Interventions sur Mesure">
+            <p>
+                Que vous soyez propriétaire d'une maison individuelle, d'un immeuble résidentiel ou d'un bâtiment commercial, Air Volt propose des interventions
+                sur mesure pour répondre à vos besoins spécifiques.
+            </p>
+            <p>
+                Nous travaillons avec des matériaux de haute qualité et nos équipes expérimentées garantissent une installation précise et conforme aux normes
+                en vigueur, pour une performance optimale de vos systèmes.
+            </p>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Air Volt. Tous droits réservés.</p>
     </footer>
+
+    <!-- JavaScript pour les onglets -->
+    <script>
+    document.querySelectorAll('.tab-item').forEach(item => {
+        item.addEventListener('click', function() {
+            // Désactiver tous les onglets
+            document.querySelectorAll('.tab-item').forEach(i => i.classList.remove('active'));
+            // Masquer tous les contenus
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+            
+            // Activer l'onglet cliqué
+            this.classList.add('active');
+            // Montrer le contenu correspondant
+            const target = this.getAttribute('data-target');
+            document.querySelector(target).classList.add('active');
+        });
+    });
+    </script>
 </body>
 </html>

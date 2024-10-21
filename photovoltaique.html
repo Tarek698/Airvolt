@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air Volt - Panneaux Photovoltaïques</title>
+    <title>Panneaux Photovoltaïques - Airvolt</title>
     <link rel="stylesheet" href="style_photovoltaique.css">
 </head>
 <body>
+
     <header>
         <div class="header-content">
             <img src="logo.png" alt="Air Volt Logo" class="logo">
@@ -19,7 +20,8 @@
                         <ul class="dropdown-menu">
                             <li><a href="chauffage_produit.html">Chauffage</a></li>
                             <li><a href="climatisation_produit.html">Climatisation</a></li>
-                            <li><a href="produit_electrique.html">Installation Électrique</a></li>
+                            <li><a href="produit_ventilation.html">Ventilation</a></li>
+                            <li><a href="photovoltaique_produit.html">Panneaux Photovoltaïques</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -49,7 +51,7 @@
         </div>
     </header>
 
-
+    <!-- SECTION HERO -->
     <section class="hero">
         <div class="hero-content">
             <h1>Panneaux Photovoltaïques</h1>
@@ -57,62 +59,74 @@
         </div>
     </section>
 
-    <section class="solar-panel section-gray">
-        <div class="panel-content">
-            <h2>Qu'est-ce que les panneaux solaires photovoltaïques ?</h2>
-            <div class="panel-details">
-                <img src="solar-panel.jpg" alt="Panneaux solaires">
-                <p>Les panneaux solaires photovoltaïques convertissent la lumière du soleil en électricité. Ils sont composés de cellules photovoltaïques qui génèrent un courant continu lorsqu'elles sont exposées à la lumière. Cette énergie peut être utilisée pour alimenter votre maison ou être injectée dans le réseau électrique.</p>
-            </div>
-        </div>
+    <!-- MENU NAVIGATION -->
+    <section class="tab-navigation">
+        <ul class="tab-menu">
+            <li class="tab-item active" data-target="#tab-installation">Installation de Panneaux Solaires</li>
+            <li class="tab-item" data-target="#tab-production">Production d'Électricité Verte</li>
+            <li class="tab-item" data-target="#tab-maintenance">Maintenance des Installations</li>
+        </ul>
     </section>
 
-    <section class="solar-advantages section-white">
-        <div class="advantages-content">
-            <h2>Les avantages des panneaux solaires photovoltaïques</h2>
-            <div class="advantages-details">
-                <img src="solar-advantages.jpg" alt="Avantages des panneaux solaires">
-                <ul>
-                    <li>Économies sur vos factures d'énergie</li>
-                    <li>Réduction de votre empreinte carbone</li>
-                    <li>Valorisation de votre propriété</li>
-                    <li>Indépendance énergétique</li>
-                    <li>Faibles coûts de maintenance</li>
-                </ul>
-            </div>
+    <!-- CONTENU DES TABS -->
+    <section class="tab-content">
+        <!-- Tab 1: Installation de Panneaux Solaires -->
+        <div id="tab-installation" class="tab-pane active">
+            <h2>Installation de Panneaux Solaires</h2>
+            <p>Nous proposons des services d'installation complets pour les panneaux solaires photovoltaïques.</p>
+            <img src="installation-panneaux.jpg" alt="Installation Panneaux Solaires">
+            <p>
+                Notre équipe de professionnels qualifiés s'occupe de l'installation de panneaux photovoltaïques en toute sécurité et efficacité.
+                Nos solutions sont adaptées pour maximiser la production d'énergie à partir du rayonnement solaire. En choisissant nos services,
+                vous investissez dans une énergie propre et renouvelable pour le long terme.
+            </p>
         </div>
-    </section>
 
-    <section class="installation section-gray">
-        <div class="installation-content">
-            <h2>Pose de Panneaux Photovoltaïques</h2>
-            <div class="installation-details">
-                <img src="installation.jpg" alt="Pose de panneaux photovoltaïques">
-                <p>Nous proposons des services complets de pose de panneaux photovoltaïques. Notre équipe de professionnels qualifiés assure une installation rapide et efficace, en respectant toutes les normes de sécurité et de qualité. Contactez-nous pour obtenir un devis personnalisé et découvrir comment vous pouvez bénéficier de l'énergie solaire.</p>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
+        <!-- Tab 2: Production d'Électricité Verte -->
+        <div id="tab-production" class="tab-pane">
+            <h2>Production d'Électricité Verte</h2>
+            <p>Nos panneaux solaires vous permettent de produire de l'électricité verte pour vos besoins énergétiques.</p>
+            <img src="production-verte.jpg" alt="Production d'Électricité Verte">
+            <p>
+                Grâce aux panneaux photovoltaïques, vous pouvez produire votre propre électricité de manière autonome. Vous réduisez ainsi
+                votre dépendance aux énergies fossiles et contribuez à la protection de l'environnement. Nos solutions vous permettent de
+                maximiser la production d'électricité, tout en vous assurant une faible empreinte carbone.
+            </p>
         </div>
-    </section>
 
-    <section class="maintenance-services section-white">
-        <div class="services-content">
-            <h2>Services d'entretien des toits et des gouttières</h2>
-            <div class="services-details">
-                <img src="maintenance.jpg" alt="Entretien des toits et des gouttières">
-                <ul>
-                    <li>Nettoyage et inspection des toits</li>
-                    <li>Réparation et remplacement des tuiles</li>
-                    <li>Nettoyage et débouchage des gouttières</li>
-                    <li>Traitement anti-mousse et anti-lichens</li>
-                    <li>Vérification de l'étanchéité et des fixations</li>
-                </ul>
-            </div>
-            <a href="#" class="cta-button">Contactez-nous pour un devis gratuit</a>
+        <!-- Tab 3: Maintenance des Installations -->
+        <div id="tab-maintenance" class="tab-pane">
+            <h2>Maintenance des Installations</h2>
+            <p>Nos services de maintenance garantissent la durabilité et l'efficacité de vos panneaux solaires.</p>
+            <img src="maintenance-solaire.jpg" alt="Maintenance Panneaux Solaires">
+            <p>
+                Pour assurer une performance optimale et prolonger la durée de vie de vos panneaux photovoltaïques, un entretien régulier est essentiel.
+                Nos techniciens qualifiés s'occupent du nettoyage, de l'inspection et de la réparation de vos installations afin de garantir une production
+                énergétique constante et efficace.
+            </p>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Air Volt. Tous droits réservés.</p>
     </footer>
+
+    <!-- JavaScript pour les onglets -->
+    <script>
+    document.querySelectorAll('.tab-item').forEach(item => {
+        item.addEventListener('click', function() {
+            // Désactiver tous les onglets
+            document.querySelectorAll('.tab-item').forEach(i => i.classList.remove('active'));
+            // Masquer tous les contenus
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+            
+            // Activer l'onglet cliqué
+            this.classList.add('active');
+            // Montrer le contenu correspondant
+            const target = this.getAttribute('data-target');
+            document.querySelector(target).classList.add('active');
+        });
+    });
+    </script>
 </body>
 </html>
