@@ -6,6 +6,34 @@ body {
     background-color: #f0f8ff;
     color: #333;
 }
+/* Barre de navigation supplémentaire alignée à droite */
+.top-navigation {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 5px 20px;
+    font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-navigation .top-link {
+    text-decoration: none;
+    color: #3498db;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.top-navigation .top-link:hover {
+    color: #f1c40f;
+}
+
+/* Style pour le lien actif */
+.top-navigation .top-link.active {
+    color: #777; /* Couleur grisée pour indiquer la page active */
+    pointer-events: none; /* Désactive le clic sur le lien actif */
+}
 
 header {
     background-color: #fff;

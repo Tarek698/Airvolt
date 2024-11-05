@@ -12,9 +12,39 @@ body {
     background-color: #f8f9fa;
 }
 
+/* Barre de navigation supplémentaire alignée à droite */
+.top-navigation {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 5px 20px;
+    font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-navigation .top-link {
+    text-decoration: none;
+    color: #3498db;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.top-navigation .top-link:hover {
+    color: #f1c40f;
+}
+
+/* Style pour le lien actif */
+.top-navigation .top-link.active {
+    color: #777; /* Couleur grisée pour indiquer la page active */
+    pointer-events: none; /* Désactive le clic sur le lien actif */
+}
 /* HEADER */
 header {
     background-color: #fff;
+    position: relative;
+    z-index: 10;
 }
 
 .header-content {
@@ -134,12 +164,13 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(9, 1fr); /* 12 colonnes pour plus de flexibilité */
     gap: 10px;
-    max-width: 1200px;
+    max-width: 1200px; 
     margin: 0 auto;
 }
 
 /* Ajustement des tailles d'images pour un meilleur alignement */
 .gallery-item {
+    position: relative;
     overflow: hidden;
     border-radius: 8px;
 }
@@ -154,6 +185,24 @@ nav ul li a:hover {
 
 .gallery-item img:hover {
     transform: scale(1.05);
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay-text {
+    opacity: 1;
 }
 
 /* Grand panneau solaire */
@@ -175,19 +224,18 @@ nav ul li a:hover {
 /* Climatiseur */
 .gallery-item.medium:nth-of-type(4) {
     grid-column: span 6; /* Prend la moitié de la largeur */
+    grid-row: span 2; /* Double hauteur */
 }
 
 /* Traitement de l'air */
 .gallery-item.small:nth-of-type(5) {
-    margin-top: 45%;
     grid-column: span 3; /* Prend un quart de la grille */
 }
 
 /* Aide (dernière image) */
 .gallery-item.wide {
     
-    grid-column: span 9; /* S'aligne à droite, prend la moitié */
-    grid-row: span 2; /* Double hauteur pour aligner avec l'image du traitement de l'air */
+    grid-column: span 3; /* S'aligne à droite, prend la moitié */
 }
 
 

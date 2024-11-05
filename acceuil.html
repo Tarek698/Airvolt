@@ -7,41 +7,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="top-navigation">
+        <a href="acceuil.html" class="top-link active">Particulier</a>
+        <a href="entreprise.html" class="top-link">Entreprise</a>
+    </div>
 
     <header>
         <div class="header-content">
-            <img src="logo.png" alt="Air Volt Logo" class="logo">
+            <a href="acceuil.html"><img src="logo.png" alt="Air Volt Logo" class="logo"></a>
             <nav>
-                <ul>
-                    <li><a href="acceuil.html">Accueil</a></li>
-                    <!-- NOS PRODUITS est déplacé avant VOS BESOINS -->
+                <ul>   
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Nos Produits</a>
                         <ul class="dropdown-menu">
-                            <li><a href="chauffage_produit.html">Chauffage</a></li>
+                            <li><a href="chauffage_produit.html">Pompe à chaleur</a></li>
                             <li><a href="climatisation_produit.html">Climatisation</a></li>
-                            <li><a href="produit_ventilation.html">Ventilation</a></li>
                             <li><a href="photovoltaique_produit.html">Panneaux Photovoltaïques</a></li>
+                            <li><a href="produit_elec.html">Électricité général</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Vos Besoins</a>
                         <ul class="dropdown-menu">
-                            <li><a href="chauffage.html">Chauffage</a></li>
-                            <li><a href="clim.html">Climatisation</a></li>
-                            <li><a href="electricite.html">Électricité</a></li>
-                            <li><a href="photovoltaique.html">Photovoltaïque</a></li>
+                            <li><a href="clim.html">Climatisation reversible</a></li>
+                            <li><a href="chauffage.html">Chauffage et Eau chaude</a></li>
+                            
+                            <li><a href="photovoltaique.html">Transition énergétique</a></li>
+                            <li><a href="produit_ventilation.html">Ventilation</a></li>
+                            <li><a href="electricite.html">Électricité général</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Aide et Service</a>
                         <ul class="dropdown-menu">
-                            <li><a href="contact.html">Contact</a></li>
                             <li><a href="contrat_entretien.html">Contrat d'entretien</a></li>
+                            <li><a href="contact.html">Besoin d'aide</a></li>
                             <li><a href="garanties.html">Les garanties</a></li>
                         </ul>
                     </li>
-                    <li><a href="présentation.html">Présentation</a></li>
+                    <li><a href="présentation.html">Notre société</a></li>
                 </ul>
             </nav>
             <div class="contact-info">
@@ -56,21 +60,27 @@
         <div class="image-gallery-grid">
             <div class="gallery-item large">
                 <img src="panneaux.jpeg" alt="Installer près de chez moi">
+                <div class="overlay-text">Transition énergétique</div>
             </div>
             <div class="gallery-item medium">
-                <img src="tableau.jpg" alt="Quel produit choisir">
+                <img src="Climatiseur-fixe.jpeg" alt="Climatisation">
+                <div class="overlay-text">Climatisation</div>
             </div>
             <div class="gallery-item small">
-                <img src="chauffage.jpg" alt="Coût d'une installation">
+                <img src="chauffage.jpg" alt="Pompe à chaleur et eau chaude">
+                <div class="overlay-text">Pompe à chaleur & Eau chaude</div>
             </div>
             <div class="gallery-item medium">
-                <img src="Climatiseur-fixe.jpeg" alt="Extension de garantie">
+                <img src="tableau.jpg" alt="Électricité général">
+                <div class="overlay-text">Électricité général</div>
             </div>
             <div class="gallery-item small">
-                <img src="traitementair.jpg" alt="Comment bien choisir">
+                <img src="traitementair.jpg" alt="Traitement de l'air">
+                <div class="overlay-text">Traitement de l'air</div>
             </div>
             <div class="gallery-item wide">
-                <img src="aide-bandeau.jpg" alt="Person with cat on the floor">
+                <img src="aide-bandeau.jpg" alt="Besoin d'aide ?">
+                <div class="overlay-text">Besoin d'aide ?</div>
             </div>
         </div>
     </section>
@@ -92,5 +102,6 @@
     <footer>
         <p>&copy; 2024 Air Volt. Tous droits réservés.</p>
     </footer>
+
 </body>
 </html>
