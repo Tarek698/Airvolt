@@ -207,8 +207,8 @@ nav ul li a:hover {
 
 /* Grand panneau solaire */
 .gallery-item.large {
-    grid-column: span 6; /* Demi-largeur */
-    grid-row: span 2; /* Double hauteur */
+    grid-column: span 3; /* Demi-largeur */
+    grid-row: span 1; /* Double hauteur */
 }
 
 /* Tableau électrique */
@@ -223,8 +223,8 @@ nav ul li a:hover {
 
 /* Climatiseur */
 .gallery-item.medium:nth-of-type(4) {
-    grid-column: span 6; /* Prend la moitié de la largeur */
-    grid-row: span 2; /* Double hauteur */
+    grid-column: span 3; /* Prend la moitié de la largeur */
+    grid-row: span 1; /* Double hauteur */
 }
 
 /* Traitement de l'air */
