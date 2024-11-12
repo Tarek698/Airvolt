@@ -16,8 +16,8 @@ body {
 .top-navigation {
     background-color: #f8f9fa;
     color: #333;
-    padding: 5px 20px;
-    font-size: 0.9em;
+    padding: 10px 20px;
+    font-size: 1.1em;
     border-bottom: 1px solid #ddd;
     display: flex;
     justify-content: flex-end;
@@ -197,17 +197,22 @@ nav ul li a:hover {
 
 .overlay-text {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1em;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(248, 252, 47, 0.9); /* Bleu pastel clair */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    font-size: 1.5em;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Ombré doux pour améliorer la lisibilité */
+    text-align: center;
+    opacity: 1;
+    padding: 0;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
 }
+
+
 
 .gallery-item:hover .overlay-text {
     opacity: 1;

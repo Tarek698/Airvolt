@@ -12,7 +12,7 @@ body {
     background-color: #f8f9fa;
 }
 
-/* Barre de navigation supplémentaire alignée à droite */
+/* Barre de navigation */
 .top-navigation {
     background-color: #f8f9fa;
     color: #333;
@@ -35,12 +35,7 @@ body {
     color: #f1c40f;
 }
 
-/* Style pour le lien actif */
-.top-navigation .top-link.active {
-    color: #777; /* Couleur grisée pour indiquer la page active */
-    pointer-events: none; /* Désactive le clic sur le lien actif */
-}
-/* HEADER */
+/* Header */
 header {
     background-color: #fff;
     position: relative;
@@ -98,14 +93,9 @@ nav ul li a:hover {
     display: block;
 }
 
-.dropdown-menu li {
-    list-style: none;
-}
-
 .dropdown-menu li a {
     padding: 10px 20px;
     color: #3498db;
-    white-space: nowrap;
 }
 
 .dropdown-menu li a:hover {
@@ -113,92 +103,65 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Contact info in header */
-.cta-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 12px 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    display: inline-block;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #f1c40f;
-    transform: scale(1.1);
-}
-
-/* Hero section styles */
+/* Section Hero */
 .hero {
     background: url('pexels-tima-miroshnichenko-5453824.jpg') center 70%/cover no-repeat;
     color: #fff;
     padding: 150px 20px;
     text-align: center;
-    margin-bottom: 20px;
-    animation: fadeIn 1s ease-in-out;
 }
 
 .hero-content h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    text-shadow:
-    -1px -1px 0 #000,  /* Coin supérieur gauche */
-     1px -1px 0 #000,  /* Coin supérieur droit */
-    -1px  1px 0 #000,  /* Coin inférieur gauche */
-     1px  1px 0 #000;  /* Coin inférieur droit */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .hero-content p {
     font-size: 1.2em;
-    text-shadow:
-    -1px -1px 0 #000,  /* Coin supérieur gauche */
-     1px -1px 0 #000,  /* Coin supérieur droit */
-    -1px  1px 0 #000,  /* Coin inférieur gauche */
-     1px  1px 0 #000;  /* Coin inférieur droit */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.cta-button {
-    background-color: #3498db; /* Primary color from the logo */
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #f1c40f; /* Secondary color from the logo */
-    transform: scale(1.05);
-}
-
-/* Section styles */
-.section-gray {
-    background-color: #f4f4f4;
+/* Section Contact Info */
+.contact-info {
+    
     padding: 50px 20px;
+    text-align: center;
 }
 
-.section-white {
+.contact-info h2 {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+/* Formulaire de Contact */
+.contact-section {
+    padding: 50px 20px;
     background-color: #fff;
-    padding: 50px 20px;
 }
 
-.section-content {
-    max-width: 1200px;
+.contact-section h2 {
+    font-size: 2em;
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Form styles */
-form div {
-    margin-bottom: 15px;
+.form-group {
+    margin-bottom: 20px;
 }
 
 form label {
-    display: block;
+    font-weight: bold;
+    color: #333;
     margin-bottom: 5px;
 }
 
@@ -207,55 +170,29 @@ form input, form textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1em;
 }
 
-/* Footer styles */
-footer {
-    background-color: #000000; /* Primary color from the logo */
+.cta-button {
+    background-color: #3498db;
     color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f1c40f;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #3498db;
+    color: white;
     text-align: center;
     padding: 20px;
-}
-nav ul li.dropdown {
-    position: relative; /* Positioning for dropdown */
-}
-
-nav ul li a.dropdown-toggle {
-    cursor: pointer; /* Pointer cursor for dropdown toggle */
-}
-
-nav ul li ul.dropdown-menu {
-    display: none; /* Initially hidden */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 10px 0;
-    z-index: 1000; /* Ensure it appears above other elements */
-}
-
-nav ul li ul.dropdown-menu li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav ul li ul.dropdown-menu li a {
-    display: block;
-    padding: 10px 20px;
-    color: #3498db; /* Primary color from the logo */
-    text-decoration: none;
-    white-space: nowrap; /* Prevent wrapping */
-    transition: background-color 0.3s ease;
-}
-
-nav ul li ul.dropdown-menu li a:hover {
-    background-color: #f1c40f; /* Secondary color from the logo */
-}
-
-/* Show the dropdown on hover */
-nav ul li.dropdown:hover ul.dropdown-menu {
-    display: block;
 }

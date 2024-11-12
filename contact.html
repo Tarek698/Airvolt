@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panneaux Photovoltaïques - Airvolt</title>
+    <title>Contact - Airvolt</title>
     <link rel="stylesheet" href="style_contact.css">
 </head>
 <body>
@@ -53,50 +53,42 @@
         </div>
     </header>
 
-
     <section class="hero">
         <div class="hero-content">
-            <h1>Contactez-nous</h1>
-            <p>Pour toute question ou demande de devis, n'hésitez pas à nous contacter.</p>
+            <h1>Aide et Service</h1>
+            <p>Page Support Technique - Nous contacter pour toute demande d'assistance technique</p>
+        </div>
+    </section>
+
+    <section class="contact-info section-white">
+        <div class="section-content">
+            <h2>Nous Contacter</h2>
+            <p>
+                Notre équipe est disponible du lundi au vendredi de 8h à 18h et le samedi de 8h à 18h pour toute demande de dépannage ou de support.
+                Pour une intervention urgente en dehors de ces horaires, nous sommes disponibles 24h/24 et 7j/7 pour toute urgence.
+            </p>
+            <p><strong>Contactez-nous en cas d'urgence :</strong> 06 95 84 42 71</p>
         </div>
     </section>
 
     <section class="contact-section section-gray">
         <div class="section-content">
-            <h2>Nos Coordonnées</h2>
-            <p><strong>Adresse :</strong> 123 Rue de l'Énergie, 75000 Paris, France</p>
-            <p><strong>Téléphone :</strong> +33 1 25 24 26 27</p>
-            <p><strong>Email :</strong> info@airvolt.fr</p>
-        </div>
-    </section>
-
-    <section class="contact-section section-white">
-        <div class="section-content">
             <h2>Formulaire de Contact</h2>
             <form action="submit_form.php" method="POST">
-                <div>
+                <div class="form-group">
                     <label for="name">Nom :</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="email">Email :</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="message">Message :</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
                 <button type="submit" class="cta-button">Envoyer</button>
             </form>
-        </div>
-    </section>
-
-    <section class="map-section section-gray">
-        <div class="section-content">
-            <h2>Notre Localisation</h2>
-            <div id="map">
-                <!-- Intégration de la carte Google Maps -->
-            </div>
         </div>
     </section>
 

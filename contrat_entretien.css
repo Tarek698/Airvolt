@@ -159,6 +159,29 @@ nav ul li a:hover {
      1px  1px 0 #000;  /* Coin inférieur droit */
 }
 
+/* Styles for the Intro Text Section */
+.intro-text {
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto 20px auto; /* Center-align and add spacing below */
+}
+
+.intro-text h2 {
+    color: #3498db; /* Primary color for the header */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
 /* MENU NAVIGATION */
 .tab-navigation {
     margin-top: 30px;

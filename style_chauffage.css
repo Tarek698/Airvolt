@@ -209,6 +209,53 @@ nav ul li a:hover {
     height: auto;
     margin-top: 20px;
 }
+.installation-explanation {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+}
+
+.installation-explanation h2 {
+    font-size: 1.6em;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.installation-explanation ol {
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.installation-explanation ol li {
+    margin-bottom: 15px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f1c40f;
+    transform: scale(1.05);
+}
+
 
 /* FOOTER */
 footer {
