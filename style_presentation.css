@@ -12,10 +12,39 @@ body {
     background-color: #f8f9fa;
 }
 
+/* Barre de navigation supplémentaire alignée à droite */
+.top-navigation {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 5px 20px;
+    font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-navigation .top-link {
+    text-decoration: none;
+    color: #3498db;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.top-navigation .top-link:hover {
+    color: #f1c40f;
+}
+
+/* Style pour le lien actif */
+.top-navigation .top-link.active {
+    color: #777; /* Couleur grisée pour indiquer la page active */
+    pointer-events: none; /* Désactive le clic sur le lien actif */
+}
 /* HEADER */
 header {
     background-color: #fff;
-   
+    position: relative;
+    z-index: 10;
 }
 
 .header-content {
@@ -68,6 +97,7 @@ nav ul li a:hover {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
 .dropdown-menu li {
     list-style: none;
 }
@@ -77,101 +107,56 @@ nav ul li a:hover {
     color: #3498db;
     white-space: nowrap;
 }
+
 .dropdown-menu li a:hover {
     background-color: #f1c40f;
     color: white;
 }
+
 /* Contact info in header */
-.contact-info {
-    text-align: right;
-}
-
-/* Styles pour les menus */
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-nav ul li {
-    margin-left: 20px;
-    position: relative; /* Nécessaire pour le positionnement du sous-menu */
-}
-
-nav ul li a {
+.cta-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 24px;
     text-decoration: none;
-    color: #3498db;
     font-weight: bold;
-    padding: 10px 20px;
-    display: block;
-    transition: color 0.3s ease;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-nav ul li:hover .dropdown-menu {
-    display: block; /* Affiche le sous-menu lors du survol */
-}
-
-/* Dropdown menu */
-.dropdown-menu {
-    display: none; /* Cache le sous-menu par défaut */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    list-style: none;
-    border-radius: 5px;
-    z-index: 1000;
-}
-
-.dropdown-menu li a {
-    display: block;
-    padding: 10px 20px;
-    color: #3498db;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.dropdown-menu li a:hover {
+.cta-button:hover {
     background-color: #f1c40f;
-    color: white;
+    transform: scale(1.1);
 }
 
 /* Hero section styles */
 .hero {
-    background: linear-gradient(to right, #3498db, #f1c40f); /* Gradient using logo colors */
+    background: url('home-3678955.jpg') center/cover no-repeat;
     color: #fff;
-    padding: 100px 20px;
+    padding: 150px 20px;
     text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .hero-content h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    text-shadow:
+    -1px -1px 0 #000,  /* Coin supérieur gauche */
+     1px -1px 0 #000,  /* Coin supérieur droit */
+    -1px  1px 0 #000,  /* Coin inférieur gauche */
+     1px  1px 0 #000;  /* Coin inférieur droit */
 }
 
 .hero-content p {
     font-size: 1.2em;
-}
-
-.cta-button {
-    background-color: #3498db; /* Primary color from the logo */
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #f1c40f; /* Secondary color from the logo */
-    transform: scale(1.05);
+    text-shadow:
+    -1px -1px 0 #000,  /* Coin supérieur gauche */
+     1px -1px 0 #000,  /* Coin supérieur droit */
+    -1px  1px 0 #000,  /* Coin inférieur gauche */
+     1px  1px 0 #000;  /* Coin inférieur droit */
 }
 
 /* Section styles */

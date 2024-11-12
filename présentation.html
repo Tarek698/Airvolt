@@ -7,46 +7,48 @@
     <link rel="stylesheet" href="style_presentation.css">
 </head>
 <body>
+    <div class="top-navigation">
+        <a href="acceuil.html" class="top-link active">Particulier</a>
+        <a href="entreprise.html" class="top-link">Entreprise</a>
+    </div>
 
     <header>
         <div class="header-content">
-            <img src="logo.png" alt="Air Volt Logo" class="logo">
+            <a href="acceuil.html"><img src="logo.png" alt="Air Volt Logo" class="logo"></a>
             <nav>
-                <ul>
-                    <li><a href="acceuil.html">Accueil</a></li>
-                    <!-- NOS PRODUITS est déplacé avant VOS BESOINS -->
+                <ul>   
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Nos Produits</a>
                         <ul class="dropdown-menu">
-                            <li><a href="chauffage_produit.html">Chauffage</a></li>
                             <li><a href="climatisation_produit.html">Climatisation</a></li>
-                            <li><a href="produit_ventilation.html">Ventilation</a></li>
+                            <li><a href="chauffage_produit.html">Pompe à chaleur</a></li>
                             <li><a href="photovoltaique_produit.html">Panneaux Photovoltaïques</a></li>
+                            <li><a href="produit_elec.html">Électricité générale</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Vos Besoins</a>
                         <ul class="dropdown-menu">
-                            <li><a href="chauffage.html">Chauffage</a></li>
-                            <li><a href="clim.html">Climatisation</a></li>
-                            <li><a href="electricite.html">Électricité</a></li>
-                            <li><a href="photovoltaique.html">Photovoltaïque</a></li>
+                            <li><a href="clim.html">Climatisation réversible</a></li>
+                            <li><a href="chauffage.html">Chauffage et Eau chaude</a></li>
+                            <li><a href="produit_ventilation.html">Conditionnement de l'air</a></li>
+                            <li><a href="photovoltaique.html">Production d'énergie renouvelable</a></li>
+                            <li><a href="electricite.html">Électricité générale</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Aide et Service</a>
                         <ul class="dropdown-menu">
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact.html">Support technique</a></li>
                             <li><a href="contrat_entretien.html">Contrat d'entretien</a></li>
                             <li><a href="garanties.html">Les garanties</a></li>
                         </ul>
                     </li>
-                    <li><a href="présentation.html">Présentation</a></li>
+                    <li><a href="présentation.html">Notre société</a></li>
                 </ul>
             </nav>
             <div class="contact-info">
-                <span>+33 1 25 24 26 27</span>
-                <span>info@airvolt.fr</span>
+                <a href="contact.html" class="cta-button">Besoin d'un devis</a>
             </div>
         </div>
     </header>

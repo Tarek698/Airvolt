@@ -7,46 +7,48 @@
     <link rel="stylesheet" href="style_clim.css">
 </head>
 <body>
+    <div class="top-navigation">
+        <a href="acceuil.html" class="top-link active">Particulier</a>
+        <a href="entreprise.html" class="top-link">Entreprise</a>
+    </div>
 
     <header>
         <div class="header-content">
-            <img src="logo.png" alt="Air Volt Logo" class="logo">
+            <a href="acceuil.html"><img src="logo.png" alt="Air Volt Logo" class="logo"></a>
             <nav>
-                <ul>
-                    <li><a href="acceuil.html">Accueil</a></li>
-                    <!-- NOS PRODUITS est déplacé avant VOS BESOINS -->
+                <ul>   
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Nos Produits</a>
                         <ul class="dropdown-menu">
-                            <li><a href="chauffage_produit.html">Chauffage</a></li>
                             <li><a href="climatisation_produit.html">Climatisation</a></li>
-                            <li><a href="produit_ventilation.html">Ventilation</a></li>
+                            <li><a href="chauffage_produit.html">Pompe à chaleur</a></li>
                             <li><a href="photovoltaique_produit.html">Panneaux Photovoltaïques</a></li>
+                            <li><a href="produit_elec.html">Électricité générale</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Vos Besoins</a>
                         <ul class="dropdown-menu">
-                            <li><a href="chauffage.html">Chauffage</a></li>
-                            <li><a href="clim.html">Climatisation</a></li>
-                            <li><a href="electricite.html">Électricité</a></li>
-                            <li><a href="photovoltaique.html">Photovoltaïque</a></li>
+                            <li><a href="clim.html">Climatisation réversible</a></li>
+                            <li><a href="chauffage.html">Chauffage et Eau chaude</a></li>
+                            <li><a href="produit_ventilation.html">Conditionnement de l'air</a></li>
+                            <li><a href="photovoltaique.html">Production d'énergie renouvelable</a></li>
+                            <li><a href="electricite.html">Électricité générale</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Aide et Service</a>
                         <ul class="dropdown-menu">
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact.html">Support technique</a></li>
                             <li><a href="contrat_entretien.html">Contrat d'entretien</a></li>
                             <li><a href="garanties.html">Les garanties</a></li>
                         </ul>
                     </li>
-                    <li><a href="présentation.html">Présentation</a></li>
+                    <li><a href="présentation.html">Notre société</a></li>
                 </ul>
             </nav>
             <div class="contact-info">
-                <span>+33 1 25 24 26 27</span>
-                <span>info@airvolt.fr</span>
+                <a href="contact.html" class="cta-button">Besoin d'un devis</a>
             </div>
         </div>
     </header>
@@ -58,6 +60,12 @@
             <p>Découvrez nos solutions pour améliorer votre confort et la qualité de votre air intérieur.</p>
         </div>
     </section>
+
+    <!-- PAVÉ D'EXPLICATION DU PROCESSUS D'INSTALLATION -->
+<!-- PAVÉ D'EXPLICATION DU PROCESSUS D'INSTALLATION -->
+
+
+
 
     <!-- MENU NAVIGATION -->
     <section class="tab-navigation">
@@ -128,7 +136,16 @@
             </p>
         </div>
     </section>
-
+<section class="installation-explanation">
+    <h2>Processus d'Installation pour la Climatisation</h2>
+    <ol>
+        <li><strong>Visite technique :</strong> Une équipe spécialisée évalue les besoins spécifiques, en tenant compte de la dimension de la pièce, de l'exposition et de l'isolation.</li>
+        <li><strong>Commande du matériel :</strong> Nous commandons les unités intérieures et extérieures adaptées (système split ou multisplit).</li>
+        <li><strong>Installation rapide :</strong> Notre équipe effectue l'installation en moins d'une journée, assurant un service rapide et efficace.</li>
+        <li><strong>Suivi et conseils :</strong> Après l’installation, nos experts vous conseillent sur l’entretien et le réglage optimal du système pour garantir sa longévité.</li>
+    </ol>
+    <a href="contact.html" class="cta-button">Contactez-nous pour un devis personnalisé</a>
+</section>
     <footer>
         <p>&copy; 2024 Air Volt. Tous droits réservés.</p>
     </footer>

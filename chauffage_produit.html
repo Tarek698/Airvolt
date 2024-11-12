@@ -7,46 +7,49 @@
     <link rel="stylesheet" href="chauff.css">
 </head>
 <body>
+    
+    <div class="top-navigation">
+        <a href="acceuil.html" class="top-link active">Particulier</a>
+        <a href="entreprise.html" class="top-link">Entreprise</a>
+    </div>
 
     <header>
         <div class="header-content">
-            <img src="logo.png" alt="Air Volt Logo" class="logo">
+            <a href="acceuil.html"><img src="logo.png" alt="Air Volt Logo" class="logo"></a>
             <nav>
-                <ul>
-                    <li><a href="acceuil.html">Accueil</a></li>
-                    <!-- NOS PRODUITS est déplacé avant VOS BESOINS -->
+                <ul>   
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Nos Produits</a>
                         <ul class="dropdown-menu">
-                            <li><a href="chauffage_produit.html">Chauffage</a></li>
                             <li><a href="climatisation_produit.html">Climatisation</a></li>
-                            <li><a href="produit_ventilation.html">Ventilation</a></li>
+                            <li><a href="chauffage_produit.html">Pompe à chaleur</a></li>
                             <li><a href="photovoltaique_produit.html">Panneaux Photovoltaïques</a></li>
+                            <li><a href="produit_elec.html">Électricité générale</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Vos Besoins</a>
                         <ul class="dropdown-menu">
-                            <li><a href="chauffage.html">Chauffage</a></li>
-                            <li><a href="clim.html">Climatisation</a></li>
-                            <li><a href="electricite.html">Électricité</a></li>
-                            <li><a href="photovoltaique.html">Photovoltaïque</a></li>
+                            <li><a href="clim.html">Climatisation réversible</a></li>
+                            <li><a href="chauffage.html">Chauffage et Eau chaude</a></li>
+                            <li><a href="produit_ventilation.html">Conditionnement de l'air</a></li>
+                            <li><a href="photovoltaique.html">Production d'énergie renouvelable</a></li>
+                            <li><a href="electricite.html">Électricité générale</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Aide et Service</a>
                         <ul class="dropdown-menu">
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact.html">Support technique</a></li>
                             <li><a href="contrat_entretien.html">Contrat d'entretien</a></li>
                             <li><a href="garanties.html">Les garanties</a></li>
                         </ul>
                     </li>
-                    <li><a href="présentation.html">Présentation</a></li>
+                    <li><a href="présentation.html">Notre société</a></li>
                 </ul>
             </nav>
             <div class="contact-info">
-                <span>+33 1 25 24 26 27</span>
-                <span>info@airvolt.fr</span>
+                <a href="contact.html" class="cta-button">Besoin d'un devis</a>
             </div>
         </div>
     </header>
@@ -66,6 +69,7 @@
             <li class="tab-item" data-target="#tab-air-air">Pompes à chaleur air/air</li>
             <li class="tab-item" data-target="#tab-hybrides">Pompes à chaleur hybrides</li>
             <li class="tab-item" data-target="#tab-thermodynamique">Chauffe-eau thermodynamique</li>
+            <li class="tab-item" data-target="#tab-electrique">Chauffage électrique</li>
         </ul>
     </section>
 
@@ -105,6 +109,15 @@
         <div id="tab-thermodynamique" class="tab-pane">
             <h2>Chauffe-eau thermodynamique</h2>
             <p>Une solution écologique pour chauffer votre eau sanitaire.</p>
+            <img src="thermodynamique.jpg" alt="Chauffe-eau thermodynamique">
+            <p>
+                Le chauffe-eau thermodynamique utilise une petite pompe à chaleur pour chauffer l'eau de votre foyer, offrant une réduction significative de la consommation d'énergie.
+            </p>
+        </div>
+
+        <div id="tab-electrique" class="tab-pane">
+            <h2>Chauffage électrique</h2>
+            <p>Une solution écologique pour chauffer.</p>
             <img src="thermodynamique.jpg" alt="Chauffe-eau thermodynamique">
             <p>
                 Le chauffe-eau thermodynamique utilise une petite pompe à chaleur pour chauffer l'eau de votre foyer, offrant une réduction significative de la consommation d'énergie.

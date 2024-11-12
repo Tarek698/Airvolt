@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Électrique - Airvolt</title>
+    <link rel="stylesheet" href="electrique.css">
+</head>
+<body>
+    <div class="top-navigation">
+        <a href="acceuil.html" class="top-link active">Particulier</a>
+        <a href="entreprise.html" class="top-link">Entreprise</a>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <a href="acceuil.html"><img src="logo.png" alt="Air Volt Logo" class="logo"></a>
+            <nav>
+                <ul>   
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Nos Produits</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="climatisation_produit.html">Climatisation</a></li>
+                            <li><a href="chauffage_produit.html">Pompe à chaleur</a></li>
+                            <li><a href="photovoltaique_produit.html">Panneaux Photovoltaïques</a></li>
+                            <li><a href="produit_elec.html">Électricité générale</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Vos Besoins</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="clim.html">Climatisation réversible</a></li>
+                            <li><a href="chauffage.html">Chauffage et Eau chaude</a></li>
+                            <li><a href="produit_ventilation.html">Conditionnement de l'air</a></li>
+                            <li><a href="photovoltaique.html">Production d'énergie renouvelable</a></li>
+                            <li><a href="electricite.html">Électricité générale</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Aide et Service</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html">Support technique</a></li>
+                            <li><a href="contrat_entretien.html">Contrat d'entretien</a></li>
+                            <li><a href="garanties.html">Les garanties</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="présentation.html">Notre société</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <a href="contact.html" class="cta-button">Besoin d'un devis</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Installation Électrique - Les Solutions Airvolt</h1>
+            <p>Des installations électriques sécurisées et performantes pour votre confort et sécurité.</p>
+        </div>
+    </section>
+
+    <!-- MENU NAVIGATION -->
+    <section class="tab-navigation">
+        <ul class="tab-menu">
+            <li class="tab-item active" data-target="#tab-domestique">Borne de recharge</li>
+            <li class="tab-item" data-target="#tab-industriel">Appareils Domotiques</li>
+            <li class="tab-item" data-target="#tab-securite">Eclairage</li>
+            <li class="tab-item" data-target="#tab-entretien">Entretien et Réparation</li>
+        </ul>
+    </section>
+
+    <!-- CONTENU DES TABS -->
+    <section class="tab-content">
+        <!-- Tab 1: Installation Domestique -->
+        <div id="tab-domestique" class="tab-pane active">
+            <h2>Installation Domestique</h2>
+            <p>Des installations électriques adaptées à votre foyer pour une sécurité optimale.</p>
+            <img src="installation-domestique.jpg" alt="Installation Électrique Domestique">
+            <p>
+                Nos services d'installation domestique vous garantissent une mise en place sécurisée et conforme aux normes pour votre résidence, assurant ainsi un environnement sûr pour toute la famille.
+            </p>
+        </div>
+
+        <!-- Tab 2: Installation Industrielle -->
+        <div id="tab-industriel" class="tab-pane">
+            <h2>Installation Industrielle</h2>
+            <p>Des solutions électriques pour les environnements industriels exigeants.</p>
+            <img src="installation-industrielle.jpg" alt="Installation Électrique Industrielle">
+            <p>
+                Airvolt propose des installations électriques pour des infrastructures industrielles, répondant aux besoins spécifiques et garantissant une efficacité et une durabilité maximales.
+            </p>
+        </div>
+
+        <!-- Tab 3: Systèmes de Sécurité -->
+        <div id="tab-securite" class="tab-pane">
+            <h2>Systèmes de Sécurité</h2>
+            <p>Assurez la protection de vos biens avec des systèmes de sécurité performants.</p>
+            <img src="systeme-securite.jpg" alt="Systèmes de Sécurité">
+            <p>
+                Nos systèmes de sécurité incluent des alarmes et des caméras pour surveiller vos locaux et protéger vos biens 24/7.
+            </p>
+        </div>
+
+        <!-- Tab 4: Entretien et Réparation -->
+        <div id="tab-entretien" class="tab-pane">
+            <h2>Entretien et Réparation</h2>
+            <p>Services de maintenance pour assurer le bon fonctionnement de votre installation.</p>
+            <img src="entretien-reparation.jpg" alt="Entretien et Réparation">
+            <p>
+                Nous offrons des services d'entretien réguliers et de réparation pour prolonger la durée de vie de vos installations et éviter les pannes coûteuses.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Air Volt. Tous droits réservés.</p>
+    </footer>
+
+    <!-- JavaScript pour les onglets -->
+    <script>
+    document.querySelectorAll('.tab-item').forEach(item => {
+        item.addEventListener('click', function() {
+            document.querySelectorAll('.tab-item').forEach(i => i.classList.remove('active'));
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+
+            this.classList.add('active');
+            const target = this.getAttribute('data-target');
+            document.querySelector(target).classList.add('active');
+        });
+    });
+    </script>
+</body>
+</html>
