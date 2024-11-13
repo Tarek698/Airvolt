@@ -113,6 +113,12 @@ nav ul li a:hover {
     color: white;
 }
 
+/* Style pour l'élément "Urgence" */
+.dropdown-menu .urgent-link {
+    color: red; /* Texte en rouge */
+    font-weight: bold; /* (Optionnel) Met en gras pour plus de visibilité */
+}
+
 /* Contact info in header */
 .cta-button {
     background-color: #3498db;

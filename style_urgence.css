@@ -1,0 +1,227 @@
+/* Réinitialisation générale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Barre de navigation supplémentaire alignée à droite */
+.top-navigation {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-navigation .top-link {
+    text-decoration: none;
+    color: #3498db;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.top-navigation .top-link:hover {
+    color: #f1c40f;
+}
+
+/* Style pour le lien actif */
+.top-navigation .top-link.active {
+    color: #777; /* Couleur grisée pour indiquer la page active */
+    pointer-events: none; /* Désactive le clic sur le lien actif */
+}
+/* HEADER */
+header {
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    color: #3498db;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1c40f;
+    color: white;
+}
+
+/* Style pour l'élément "Urgence" */
+.dropdown-menu .urgent-link {
+    color: red; /* Texte en rouge */
+    font-weight: bold; /* (Optionnel) Met en gras pour plus de visibilité */
+}
+
+/* Contact info in header */
+.cta-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f1c40f;
+    transform: scale(1.1);
+}
+
+/* Hero section styles */
+.hero {
+    background: url('home-3678955.jpg') center 55%/cover no-repeat;
+    color: #fff;
+    padding: 150px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow:
+    -1px -1px 0 #000,  /* Coin supérieur gauche */
+     1px -1px 0 #000,  /* Coin supérieur droit */
+    -1px  1px 0 #000,  /* Coin inférieur gauche */
+     1px  1px 0 #000;  /* Coin inférieur droit */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    text-shadow:
+    -1px -1px 0 #000,  /* Coin supérieur gauche */
+     1px -1px 0 #000,  /* Coin supérieur droit */
+    -1px  1px 0 #000,  /* Coin inférieur gauche */
+     1px  1px 0 #000;  /* Coin inférieur droit */
+}
+
+
+
+/* Section styles */
+.section-white {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+    text-align: center; /* Centrer tout le texte de cette section */
+}
+
+.urgence-content h2 {
+    color: #d9534f;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.urgence-content h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.contact-number {
+    font-size: 2em;
+    color: #d9534f;
+    font-weight: bold;
+    margin: 10px 0; /* Espacement en haut et en bas pour plus d'air */
+}
+
+/* Ajouter un espacement entre les paragraphes pour améliorer la lisibilité */
+.urgence-content p {
+    margin-bottom: 15px;
+    line-height: 1.6; /* Améliore l'espacement entre les lignes */
+}
+
+/* Ajout d'un léger style pour souligner le service 24/7 */
+.urgence-content .emphasis {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
