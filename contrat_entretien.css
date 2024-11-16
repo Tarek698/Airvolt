@@ -113,6 +113,11 @@ nav ul li a:hover {
     color: white;
 }
 
+.dropdown-menu .urgent-link {
+    color: red; /* Texte en rouge */
+    font-weight: bold; /* (Optionnel) Met en gras pour plus de visibilité */
+}
+
 /* Contact info in header */
 .cta-button {
     background-color: #3498db;
@@ -142,21 +147,24 @@ nav ul li a:hover {
 
 .hero-content h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    color: #fff;
     text-shadow:
-    -1px -1px 0 #000,  /* Coin supérieur gauche */
-     1px -1px 0 #000,  /* Coin supérieur droit */
-    -1px  1px 0 #000,  /* Coin inférieur gauche */
-     1px  1px 0 #000;  /* Coin inférieur droit */
+        -2px -2px 4px rgba(0, 0, 0, 0.7),
+        2px -2px 4px rgba(0, 0, 0, 0.7),
+        -2px 2px 4px rgba(0, 0, 0, 0.7),
+        2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre forte autour */
+    margin: 0;
 }
 
 .hero-content p {
+    color: #f0f0f0; /* Couleur légèrement grisée */
     font-size: 1.2em;
     text-shadow:
-    -1px -1px 0 #000,  /* Coin supérieur gauche */
-     1px -1px 0 #000,  /* Coin supérieur droit */
-    -1px  1px 0 #000,  /* Coin inférieur gauche */
-     1px  1px 0 #000;  /* Coin inférieur droit */
+        -2px -2px 4px rgba(0, 0, 0, 0.7),
+        2px -2px 4px rgba(0, 0, 0, 0.7),
+        -2px 2px 4px rgba(0, 0, 0, 0.7),
+        2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre forte autour */
+    margin: 0;
 }
 
 /* Styles for the Intro Text Section */

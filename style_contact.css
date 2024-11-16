@@ -102,6 +102,10 @@ nav ul li a:hover {
     background-color: #f1c40f;
     color: white;
 }
+.dropdown-menu .urgent-link {
+    color: red; /* Texte en rouge */
+    font-weight: bold; /* (Optionnel) Met en gras pour plus de visibilité */
+}
 
 /* Section Hero */
 .hero {
@@ -113,13 +117,24 @@ nav ul li a:hover {
 
 .hero-content h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #fff;
+    text-shadow:
+        -2px -2px 4px rgba(0, 0, 0, 0.7),
+        2px -2px 4px rgba(0, 0, 0, 0.7),
+        -2px 2px 4px rgba(0, 0, 0, 0.7),
+        2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre forte autour */
+    margin: 0;
 }
 
 .hero-content p {
+    color: #f0f0f0; /* Couleur légèrement grisée */
     font-size: 1.2em;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow:
+        -2px -2px 4px rgba(0, 0, 0, 0.7),
+        2px -2px 4px rgba(0, 0, 0, 0.7),
+        -2px 2px 4px rgba(0, 0, 0, 0.7),
+        2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre forte autour */
+    margin: 0;
 }
 
 /* Section Contact Info */
