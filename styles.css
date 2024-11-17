@@ -208,7 +208,7 @@ nav ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgba(248, 252, 47, 0.9); /* Bleu pastel clair */
+    color: rgba(4, 213, 255, 0.9); /* Bleu pastel clair */
     text-shadow:
     -2px -2px 4px rgba(0, 0, 0, 0.7),
     2px -2px 4px rgba(0, 0, 0, 0.7),
@@ -275,7 +275,6 @@ nav ul li a:hover {
 
 /* Aide (dernière image) */
 .gallery-item.wide {
-    
     grid-column: span 3; /* S'aligne à droite, prend la moitié */
 }
 
@@ -344,6 +343,16 @@ footer {
 
 footer:hover {
     transform: scale(1.02);
+}
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #94d2bd;
 }
 
 /* Animations */
