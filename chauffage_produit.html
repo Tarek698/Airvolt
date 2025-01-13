@@ -15,7 +15,10 @@
 
     <header>
         <div class="header-content">
-            <a href="index.html"><img src="logo.png" alt="Air Volt Logo" class="logo"></a>
+            <button class="menu-toggle" aria-label="Menu">
+                &#9776; <!-- Icône burger -->
+            </button>  
+            <a href="index.html"><img src="logo.png" alt="Air Volt Logo" class="logo"></a>          
             <nav>
                 <ul>   
                     <li class="dropdown">
@@ -52,6 +55,7 @@
                 <a href="formulaire.html" class="cta-button">Besoin d'un devis</a>
             </div>
         </div>
+        <div class="overlay"></div>
     </header>
 
     <!-- SECTION HERO -->
@@ -135,20 +139,67 @@
 
     <!-- JavaScript pour les onglets -->
     <script>
-    document.querySelectorAll('.tab-item').forEach(item => {
-        item.addEventListener('click', function() {
-            // Désactiver tous les onglets
-            document.querySelectorAll('.tab-item').forEach(i => i.classList.remove('active'));
-            // Masquer tous les contenus
-            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
-            
-            // Activer l'onglet cliqué
-            this.classList.add('active');
-            // Montrer le contenu correspondant
-            const target = this.getAttribute('data-target');
-            document.querySelector(target).classList.add('active');
-        });
+        // Gestion de la sidebar 
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+    
+        const overlay = document.querySelector('.overlay');
+
+    menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active'); // Ouvre/ferme la sidebar
+    overlay.classList.toggle('active'); // Active/désactive l'overlay
     });
+
+    overlay.addEventListener('click', () => {
+    nav.classList.remove('active'); // Ferme la sidebar
+    overlay.classList.remove('active'); // Ferme l'overlay
+    });
+    </script>
+    <script>
+        // Gestion du menu déroulant (dropdown)
+        const dropdownToggles = document.querySelectorAll('nav ul li > a');
+    
+        dropdownToggles.forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                const parentLi = toggle.parentElement;
+    
+                // Vérifie si un sous-menu existe
+                if (toggle.nextElementSibling && toggle.nextElementSibling.tagName === 'UL') {
+                    e.preventDefault(); // Empêche la redirection
+    
+                    // Basculer la classe active sur le parent
+                    parentLi.classList.toggle('active');
+    
+                    // Fermer les autres sous-menus
+                    dropdownToggles.forEach(otherToggle => {
+                        if (otherToggle !== toggle) {
+                            otherToggle.parentElement.classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+    <script>
+           
+    </script>
+    <script>
+        // Gestion des onglets
+        document.querySelectorAll('.tab-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Désactiver tous les onglets
+                document.querySelectorAll('.tab-item').forEach(i => i.classList.remove('active'));
+                // Masquer tous les contenus
+                document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+                
+                // Activer l'onglet cliqué
+                this.classList.add('active');
+                // Montrer le contenu correspondant
+                const target = this.getAttribute('data-target');
+                document.querySelector(target).classList.add('active');
+            });
+        });
     </script>
 </body>
 </html>
+
