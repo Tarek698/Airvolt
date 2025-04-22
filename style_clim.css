@@ -1,442 +1,66 @@
-/* Réinitialisation générale */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;line-height:1.6;color:#333;background-color:#f8f9fa}
+.top-navigation{background-color:#f8f9fa;color:#333;padding:5px 20px;font-size:.9em;border-bottom:1px solid #ddd;display:flex;justify-content:flex-end}
+.top-navigation .top-link{text-decoration:none;color:#3498db;margin-left:15px;font-weight:700;transition:color .3s ease}
+.top-navigation .top-link:hover{color:#f1c40f}
+.top-navigation .top-link.active{color:#777;pointer-events:none}
+header{background-color:#fff;position:relative;z-index:10}
+.header-content{display:flex;justify-content:space-between;align-items:center;padding:20px;max-width:1200px;margin:0 auto}
+.logo{width:150px}
+nav ul{list-style:none;display:flex}
+nav ul li{margin-left:20px;position:relative}
+nav ul li a{text-decoration:none;color:#3498db;font-weight:700;padding:10px 15px;display:block;transition:color .3s ease}
+nav ul li a:hover{color:#f1c40f}
+.dropdown-menu{display:none;top:100%;left:0;background-color:#fff;box-shadow:0 2px 4px rgba(0,0,0,.1);border-radius:5px;padding:10px 0}
+.dropdown:hover .dropdown-menu{display:block}
+.dropdown-menu li{list-style:none}
+.dropdown-menu li a{padding:10px 20px;color:#3498db;white-space:nowrap}
+.dropdown-menu li a:hover{background-color:#f1c40f;color:#fff}
+.dropdown-menu .urgent-link{color:red;font-weight:700}
+.cta-button{background-color:#3498db;color:#fff;padding:12px 24px;text-decoration:none;font-weight:700;border-radius:8px;display:inline-block;transition:background-color .3s ease,transform .3s ease}
+.cta-button:hover{background-color:#f1c40f;transform:scale(1.1)}
+.hero{background:url(living-room-6940895.webp) top/cover no-repeat;color:#fff;padding:150px 20px;text-align:center;margin-bottom:20px;animation:fadeIn 1s ease-in-out}
+.hero-content h1{font-size:2.5em;color:#fff;text-shadow:-2px -2px 4px rgba(0,0,0,.7),2px -2px 4px rgba(0,0,0,.7),-2px 2px 4px rgba(0,0,0,.7),2px 2px 4px rgba(0,0,0,.7);margin:0}
+.hero-content p{color:#f0f0f0;font-size:1.2em;text-shadow:-2px -2px 4px rgba(0,0,0,.7),2px -2px 4px rgba(0,0,0,.7),-2px 2px 4px rgba(0,0,0,.7),2px 2px 4px rgba(0,0,0,.7);margin:0}
+.tab-navigation{margin-top:30px;border-bottom:2px solid #ddd;text-align:center}
+.tab-menu{display:inline-flex;list-style-type:none;padding:10px;justify-content:center}
+.tab-item{font-size:1.2em;cursor:pointer;padding:10px 20px;color:#3498db;transition:all .3s ease;border-bottom:2px solid transparent;margin:0 15px}
+.tab-item.active,.tab-item:hover{color:#f1c40f;border-bottom:2px solid #3498db}
+.tab-content{max-width:1200px;margin:20px auto;padding:20px}
+.tab-pane{display:none}
+.tab-pane.active{display:block}
+.tab-pane img{width:25%;height:auto;margin-top:20px}
+.installation-explanation{max-width:1000px;margin:30px auto;padding:20px 30px;background-color:#f8f9fa;border-radius:8px;border-left:4px solid #3498db;font-size:1.1em;line-height:1.8;color:#333}
+.installation-explanation h2{font-size:1.6em;color:#3498db;margin-bottom:15px}
+.installation-explanation ol{padding-left:20px;list-style-type:decimal}
+.installation-explanation ol li{margin-bottom:15px}
+.button-container{text-align:center;margin-top:20px}
+.cta-button{background-color:#3498db;color:#fff;padding:10px 20px;border-radius:5px;text-decoration:none;font-weight:700;transition:background-color .3s ease,transform .3s ease}
+.cta-button:hover{background-color:#f1c40f;transform:scale(1.05)}
+footer{background-color:#3498db;color:#fff;text-align:center;padding:20px;margin-top:50px}
+.menu-toggle{display:none}
+@media (max-width:768px){
+.header-content{display:flex;justify-content:space-between;align-items:center;flex-direction:row}
+.menu-toggle{display:block;font-size:1.5em;background:0 0;border:none;cursor:pointer;margin-left:10px;position:relative}
+.logo{width:120px;max-width:100%;position:relative;margin:0 auto}
+.cta-button{padding:6px 12px;font-size:.8em;margin-right:10px;position:relative}
 }
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+@media (max-width:768px){
+nav{position:fixed;top:0;left:-250px;height:100%;width:250px;background-color:#fff;box-shadow:2px 0 5px rgba(0,0,0,.2);overflow-y:auto;transition:left .3s ease;flex-direction:column;padding:20px;z-index:1000}
+nav.active{left:0}
+nav ul{flex-direction:column;gap:15px;margin:0;padding:0;list-style:none}
+nav ul li ul{background-color:transparent!important;box-shadow:none!important;border:none!important;padding:0!important;margin:0!important;display:none;flex-direction:column;margin:0;padding-left:20px;overflow:hidden;max-height:0;transition:max-height .3s ease;position:relative}
+nav ul li.active ul{display:flex;max-height:500px}
+nav ul li{position:relative;margin-bottom:10px}
+nav ul li ul li a{font-size:.7em;white-space:normal;line-height:1.4}
+.overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.5);z-index:999}
+.overlay.active{display:block}
+.tab-menu{display:flex;overflow-x:auto;white-space:nowrap;gap:10px;padding:10px;list-style:none;margin:0;border-bottom:1px solid #ddd}
+.tab-item{flex:0 0 auto;padding:10px 20px;font-size:.9rem;text-align:center;cursor:pointer;transition:color .3s ease,border-bottom .3s ease;border-bottom:2px solid transparent;color:#3498db;white-space:nowrap}
+.tab-item.active,.tab-item:hover{color:#f1c40f;border-bottom:2px solid #f1c40f}
 }
-
-/* Barre de navigation supplémentaire alignée à droite */
-.top-navigation {
-    background-color: #f8f9fa;
-    color: #333;
-    padding: 5px 20px;
-    font-size: 0.9em;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.top-navigation .top-link {
-    text-decoration: none;
-    color: #3498db;
-    margin-left: 15px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.top-navigation .top-link:hover {
-    color: #f1c40f;
-}
-
-/* Style pour le lien actif */
-.top-navigation .top-link.active {
-    color: #777; /* Couleur grisée pour indiquer la page active */
-    pointer-events: none; /* Désactive le clic sur le lien actif */
-}
-/* HEADER */
-header {
-    background-color: #fff;
-    position: relative;
-    z-index: 10;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.logo {
-    width: 150px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-    position: relative;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
-    padding: 10px 15px;
-    display: block;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #f1c40f;
-}
-
-.dropdown-menu {
-    display: none;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 10px 0;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu li {
-    list-style: none;
-}
-
-.dropdown-menu li a {
-    padding: 10px 20px;
-    color: #3498db;
-    white-space: nowrap;
-}
-
-.dropdown-menu li a:hover {
-    background-color: #f1c40f;
-    color: white;
-}
-.dropdown-menu .urgent-link {
-    color: red; /* Texte en rouge */
-    font-weight: bold; /* (Optionnel) Met en gras pour plus de visibilité */
-}
-/* Contact info in header */
-.cta-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 12px 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    display: inline-block;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #f1c40f;
-    transform: scale(1.1);
-}
-
-/* Hero section styles */
-.hero {
-    background: url('living-room-6940895.webp') top/cover no-repeat;
-    color: #fff;
-    padding: 150px 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.hero-content h1 {
-    font-size: 2.5em;
-    color: #fff;
-    text-shadow:
-        -2px -2px 4px rgba(0, 0, 0, 0.7),
-        2px -2px 4px rgba(0, 0, 0, 0.7),
-        -2px 2px 4px rgba(0, 0, 0, 0.7),
-        2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre forte autour */
-    margin: 0;
-}
-
-.hero-content p {
-    color: #f0f0f0; /* Couleur légèrement grisée */
-    font-size: 1.2em;
-    text-shadow:
-        -2px -2px 4px rgba(0, 0, 0, 0.7),
-        2px -2px 4px rgba(0, 0, 0, 0.7),
-        -2px 2px 4px rgba(0, 0, 0, 0.7),
-        2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre forte autour */
-    margin: 0;
-}
-/* MENU NAVIGATION */
-.tab-navigation {
-    margin-top: 30px;
-    border-bottom: 2px solid #ddd;
-    text-align: center;
-}
-
-.tab-menu {
-    display: inline-flex;
-    list-style-type: none;
-    padding: 10px;
-    justify-content: center;
-}
-
-.tab-item {
-    font-size: 1.2em;
-    cursor: pointer;
-    padding: 10px 20px;
-    color: #3498db;
-    transition: all 0.3s ease;
-    border-bottom: 2px solid transparent;
-    margin: 0 15px;
-}
-
-.tab-item:hover,
-.tab-item.active {
-    color: #f1c40f;
-    border-bottom: 2px solid #3498db;
-}
-
-/* CONTENU DES TABS */
-.tab-content {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-.tab-pane {
-    display: none;
-}
-
-.tab-pane.active {
-    display: block;
-}
-
-.tab-pane img {
-    width: 25%;
-    height: auto;
-    margin-top: 20px;
-}
-.installation-explanation {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 20px 30px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    border-left: 4px solid #3498db;
-    font-size: 1.1em;
-    line-height: 1.8;
-    color: #333;
-}
-
-.installation-explanation h2 {
-    font-size: 1.6em;
-    color: #3498db;
-    margin-bottom: 15px;
-}
-
-.installation-explanation ol {
-    padding-left: 20px;
-    list-style-type: decimal;
-}
-
-.installation-explanation ol li {
-    margin-bottom: 15px;
-}
-
-.button-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.cta-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #f1c40f;
-    transform: scale(1.05);
-}
-
-
-
-/* FOOTER */
-footer {
-    background-color: #3498db;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
-.menu-toggle {
-    display: none;
-}
-@media (max-width: 768px) {
-    .header-content {
-        display: flex; /* Aligne les éléments sur une ligne */
-        justify-content: space-between; /* Espace entre les éléments */
-        align-items: center; /* Aligne verticalement les éléments */
-        flex-direction: row; /* Les éléments restent sur une ligne */
-    }
-
-    /* Bouton burger à gauche */
-    .menu-toggle {
-        display: block;
-        font-size: 1.5em;
-        background: none;
-        border: none;
-        cursor: pointer;
-        margin-left: 10px; /* Ajout d'un léger espace par rapport au bord */
-        position: relative; /* Plus besoin de `right` */
-    }
-
-    /* Logo centré */
-    .logo {
-        width: 120px; /* Taille du logo */
-        max-width: 100%;
-        position: relative; /* Supprime `absolute` */
-        margin: 0 auto; /* Centre le logo automatiquement */
-    }
-
-    /* Bouton "Besoin d'un devis" à droite */
-    .cta-button {
-        padding: 6px 12px; /* Réduction sur mobile */
-        font-size: 0.8em;
-        margin-right: 10px; /* Ajout d'un léger espace par rapport au bord */
-        position: relative; /* Supprime `left` */
-    }
-}
-/* Sidebar uniquement pour mobile */
-@media (max-width: 768px) {
-    /* Sidebar principale */
-    nav {
-        position: fixed;
-        top: 0;
-        left: -250px; /* Hors de l'écran à gauche */
-        height: 100%;
-        width: 250px; /* Largeur de la sidebar */
-        background-color: #fff;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-        overflow-y: auto; /* Scroll si nécessaire */
-        transition: left 0.3s ease; /* Animation fluide pour l'ouverture/fermeture */
-        flex-direction: column; /* Les liens empilés */
-        padding: 20px;
-        z-index: 1000;
-    }
-
-    /* Affiche la sidebar quand elle est active */
-    nav.active {
-        left: 0 ;
-        
-    }
-
-    /* Liste principale dans la sidebar */
-    nav ul  {
-        flex-direction: column;
-        gap: 15px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        
-    }
-
-    /* Sous-menus masqués par défaut */
-    nav ul li ul {
-        background-color: transparent !important; /* Supprime le fond */
-        box-shadow: none !important; /* Supprime l'ombre */
-        border: none !important; /* Supprime la bordure */
-        padding: 0 !important; /* Supprime le padding */
-        margin: 0 !important; /* Supprime les marges */
-        display: none; /* Masqué par défaut */
-        flex-direction: column;
-        margin: 0;
-        padding-left: 20px; /* Décalage pour montrer la hiérarchie */
-        overflow: hidden; /* Cache tout contenu qui dépasse */
-        max-height: 0; /* Empêche le chevauchement initial */
-        transition: max-height 0.3s ease; /* Transition fluide */
-        position: relative; /* Change la position pour qu'il reste dans le flux */
-    }
-
-    /* Affiche le sous-menu quand le parent est actif */
-    nav ul li.active ul {
-        display: flex; /* Affiche les sous-menus */
-        max-height: 500px; /* Ajustez selon le contenu réel */
-    }
-
-    /* Espacement et position des éléments parents */
-    nav ul li {
-        position: relative; /* Nécessaire pour un bon flux */
-        margin-bottom: 10px; /* Ajoute un espace entre les éléments */
-    }
-    nav ul li ul li a {
-        font-size: 0.7em; /* Réduit la taille de la police */
-        white-space: normal; /* Permet au texte de se répartir sur plusieurs lignes */
-        line-height: 1.4; /* Ajuste l'espacement vertical */
-    }
-
-    /* Overlay pour l'effet de fermeture */
-    .overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Arrière-plan semi-transparent */
-        z-index: 999;
-    }
-
-    .overlay.active {
-        display: block;
-    }
-
-.tab-menu {
-        display: flex; /* Affiche les onglets en ligne */
-        overflow-x: auto; /* Permet un défilement horizontal */
-        white-space: nowrap; /* Empêche les retours à la ligne */
-        gap: 10px; /* Espacement entre les onglets */
-        padding: 10px; /* Ajoute un peu de padding autour */
-        list-style: none; /* Supprime les puces */
-        margin: 0;
-        border-bottom: 1px solid #ddd; /* Ligne séparatrice */
-    }
-
-    .tab-item {
-        flex: 0 0 auto; /* Conserve la taille minimale pour chaque onglet */
-        padding: 10px 20px;
-        font-size: 0.9rem; /* Réduit légèrement la taille de la police pour mobile */
-        text-align: center;
-        cursor: pointer;
-        transition: color 0.3s ease, border-bottom 0.3s ease;
-        border-bottom: 2px solid transparent; /* Ligne active */
-        color: #3498db;
-        white-space: nowrap; /* Empêche les onglets de s'étirer */
-    }
-
-    .tab-item:hover,
-    .tab-item.active {
-        color: #f1c40f;
-        border-bottom: 2px solid #f1c40f; /* Indique l'onglet actif */
-    }
-}
-@media (min-width: 769px) {
-    nav ul li {
-        position: relative; /* Nécessaire pour que le sous-menu se positionne */
-    }
-
-    nav ul li ul {
-        display: none;
-        position: absolute; /* Affiche les sous-menus en superposition */
-        top: 100%; /* Position en dessous du parent */
-        left: 0;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 10;
-    }
-
-    nav ul li:hover ul {
-        display: block; /* Affiche le sous-menu au survol */
-    }
+@media (min-width:769px){
+nav ul li{position:relative}
+nav ul li ul{display:none;position:absolute;top:100%;left:0;background-color:#fff;box-shadow:0 2px 4px rgba(0,0,0,.1);z-index:10}
+nav ul li:hover ul{display:block}
 }

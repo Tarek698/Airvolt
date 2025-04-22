@@ -1,293 +1,46 @@
-/* Réinitialisation générale */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
-}
-
-/* Barre de navigation supplémentaire alignée à droite */
-.top-navigation {
-    background-color: #f8f9fa;
-    color: #333;
-    padding: 5px 20px;
-    font-size: 0.9em;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.top-navigation .top-link {
-    text-decoration: none;
-    color: #3498db;
-    margin-left: 15px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.top-navigation .top-link:hover {
-    color: #f1c40f;
-}
-
-/* Style pour le lien actif */
-.top-navigation .top-link.active {
-    color: #777; /* Couleur grisée pour indiquer la page active */
-    pointer-events: none; /* Désactive le clic sur le lien actif */
-}
-/* HEADER */
-header {
-    background-color: #fff;
-    position: relative;
-    z-index: 10;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.logo {
-    width: 150px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-    position: relative;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
-    padding: 10px 15px;
-    display: block;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #f1c40f;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 10px 0;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu li {
-    list-style: none;
-}
-
-.dropdown-menu li a {
-    padding: 10px 20px;
-    color: #3498db;
-    white-space: nowrap;
-}
-
-.dropdown-menu li a:hover {
-    background-color: #f1c40f;
-    color: white;
-}
-
-/* Hero section styles */
-.hero-garanties {
-    background: url('home-3678955.jpg') center/cover no-repeat;
-    color: #fff;
-    padding: 150px 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.hero-content h1 {
-    font-size: 2.5em;
-    color: #fff;
-    text-shadow:
-        -2px -2px 4px rgba(0, 0, 0, 0.7),
-        2px -2px 4px rgba(0, 0, 0, 0.7),
-        -2px 2px 4px rgba(0, 0, 0, 0.7),
-        2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre forte autour */
-    margin: 0;
-}
-
-.hero-content p {
-    color: #f0f0f0; /* Couleur légèrement grisée */
-    font-size: 1.2em;
-    text-shadow:
-        -2px -2px 4px rgba(0, 0, 0, 0.7),
-        2px -2px 4px rgba(0, 0, 0, 0.7),
-        -2px 2px 4px rgba(0, 0, 0, 0.7),
-        2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre forte autour */
-    margin: 0;
-}
-
-/* SECTION INTRODUCTION - IMAGE À GAUCHE */
-.intro-garanties .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 20px;
-    background-color: transparent;
-}
-
-.intro-garanties .image-left {
-    flex: 1;
-    max-width: 40%;
-}
-
-.intro-garanties .image-left img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.intro-garanties .text-right {
-    flex: 1;
-    padding-left: 20px;
-}
-
-.intro-garanties h2 {
-    font-size: 2.5em;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-.intro-garanties p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-/* SECTION AVANTAGES - IMAGE À DROITE */
-.advantages .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 20px;
-}
-
-.advantages .container.reverse {
-    flex-direction: row-reverse;
-}
-
-.advantages .text-left {
-    flex: 1;
-    padding-right: 20px;
-    text-align: left;
-}
-
-.advantages h2 {
-    font-size: 2.5em;
-    color: #3498db;
-    margin-bottom: 30px;
-}
-
-.advantages ul {
-    list-style: none;
-    padding: 0;
-}
-
-.advantages ul li {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.advantages .image-right {
-    flex: 1;
-    max-width: 40%;
-}
-
-.advantages .image-right img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* BLOC SUPPLÉMENTAIRE DÉTAILS GARANTIES */
-.details-garanties .container {
-    padding: 50px 20px;
-    background-color: transparent;
-}
-
-.details-garanties .text-full {
-    text-align: center;
-}
-
-.details-garanties h2 {
-    font-size: 2.5em;
-    color: #3498db;
-    margin-bottom: 20px;
-}
-
-.details-garanties ul {
-    list-style: none;
-    padding-left: 20px;
-}
-
-.details-garanties ul li {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-}
-
-/* SECTION APPEL À L'ACTION */
-.cta {
-    background-color: #3498db;
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.cta h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.cta p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    background-color: #fff;
-    color: #3498db;
-    padding: 15px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #f1c40f;
-    color: #fff;
-}
-
-/* FOOTER */
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;line-height:1.6;color:#333;background-color:#f8f9fa}
+.top-navigation{background-color:#f8f9fa;color:#333;padding:5px 20px;font-size:.9em;border-bottom:1px solid #ddd;display:flex;justify-content:flex-end}
+.top-navigation .top-link{text-decoration:none;color:#3498db;margin-left:15px;font-weight:700;transition:color .3s ease}
+.top-navigation .top-link:hover{color:#f1c40f}
+.top-navigation .top-link.active{color:#777;pointer-events:none}
+header{background-color:#fff;position:relative;z-index:10}
+.header-content{display:flex;justify-content:space-between;align-items:center;padding:20px;max-width:1200px;margin:0 auto}
+.logo{width:150px}
+nav ul{list-style:none;display:flex}
+nav ul li{margin-left:20px;position:relative}
+nav ul li a{text-decoration:none;color:#3498db;font-weight:700;padding:10px 15px;display:block;transition:color .3s ease}
+nav ul li a:hover{color:#f1c40f}
+.dropdown-menu{display:none;position:absolute;top:100%;left:0;background-color:#fff;box-shadow:0 2px 4px rgba(0,0,0,.1);border-radius:5px;padding:10px 0}
+.dropdown:hover .dropdown-menu{display:block}
+.dropdown-menu li{list-style:none}
+.dropdown-menu li a{padding:10px 20px;color:#3498db;white-space:nowrap}
+.dropdown-menu li a:hover{background-color:#f1c40f;color:#fff}
+.hero-garanties{background:url(home-3678955.jpg) center/cover no-repeat;color:#fff;padding:150px 20px;text-align:center;margin-bottom:20px;animation:fadeIn 1s ease-in-out}
+.hero-content h1{font-size:2.5em;color:#fff;text-shadow:-2px -2px 4px rgba(0,0,0,.7),2px -2px 4px rgba(0,0,0,.7),-2px 2px 4px rgba(0,0,0,.7),2px 2px 4px rgba(0,0,0,.7);margin:0}
+.hero-content p{color:#f0f0f0;font-size:1.2em;text-shadow:-2px -2px 4px rgba(0,0,0,.7),2px -2px 4px rgba(0,0,0,.7),-2px 2px 4px rgba(0,0,0,.7),2px 2px 4px rgba(0,0,0,.7);margin:0}
+.intro-garanties .container{display:flex;align-items:center;justify-content:space-between;padding:50px 20px;background-color:transparent}
+.intro-garanties .image-left{flex:1;max-width:40%}
+.intro-garanties .image-left img{width:100%;border-radius:10px}
+.intro-garanties .text-right{flex:1;padding-left:20px}
+.intro-garanties h2{font-size:2.5em;color:#2c3e50;margin-bottom:20px}
+.intro-garanties p{font-size:1.2em;color:#555}
+.advantages .container{display:flex;align-items:center;justify-content:space-between;padding:50px 20px}
+.advantages .container.reverse{flex-direction:row-reverse}
+.advantages .text-left{flex:1;padding-right:20px;text-align:left}
+.advantages h2{font-size:2.5em;color:#3498db;margin-bottom:30px}
+.advantages ul{list-style:none;padding:0}
+.advantages ul li{font-size:1.2em;margin-bottom:15px;color:#333}
+.advantages .image-right{flex:1;max-width:40%}
+.advantages .image-right img{width:100%;border-radius:10px}
+.details-garanties .container{padding:50px 20px;background-color:transparent}
+.details-garanties .text-full{text-align:center}
+.details-garanties h2{font-size:2.5em;color:#3498db;margin-bottom:20px}
+.details-garanties ul{list-style:none;padding-left:20px}
+.details-garanties ul li{font-size:1.2em;margin-bottom:15px}
+.cta{background-color:#3498db;color:#fff;padding:60px 20px;text-align:center}
+.cta h2{font-size:2.5em;margin-bottom:20px}
+.cta p{font-size:1.2em;margin-bottom:30px}
+.cta-button{background-color:#fff;color:#3498db;padding:15px 30px;border-radius:30px;text-decoration:none;font-weight:700;transition:background-color .3s ease,color .3s ease}
+.cta-button:hover{background-color:#f1c40f;color:#fff}
+footer{background-color:#000;color:#fff;text-align:center;padding:20px}
